@@ -12,3 +12,7 @@ module.exports = (robot) ->
   robot.respond /DIE$/i, (msg) ->
     msg.send "Goodbye, cruel world."
     process.exit 0
+
+  robot.respond /please.*reboot.*/i, (msg) ->
+    msg.reply "Why certainly, it would be my pleasure. Back in a jiffy, everyone!"
+    process.exit 0

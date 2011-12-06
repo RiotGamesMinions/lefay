@@ -26,7 +26,3 @@ module.exports = (robot) ->
 
   robot.hear /pizza party/i, (msg) ->
     msg.send "http://school.discoveryeducation.com/clipart/images/pizza-party-color.gif"
-
-  robot.respond /please.*reboot.*/i, (msg) ->
-    msg.reply "Why certainly, it would be my pleasure. Back in a jiffy, everyone!"
-    process.exit 0
