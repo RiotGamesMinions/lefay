@@ -29,9 +29,6 @@ module.exports = (robot) ->
   robot.respond /amumu me/i, (msg) ->
     msg.send "http://i.imgur.com/UL1rB.gif"
 
-  robot.respond /olaf me/i, (msg) ->
-    msg.send "http://i.imgur.com/12GiL.gif"
-
   robot.respond /annie me/i, (msg) ->
     msg.send "http://i56.tinypic.com/2gw9lyd.jpg"
 
