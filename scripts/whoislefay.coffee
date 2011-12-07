@@ -17,6 +17,3 @@ module.exports = (robot) ->
   robot.hear /MERL-(\d+)/i, (msg) ->
     unless msg.match['input'].match /jira MERL/
       msg.send "https://jira.riotgames.com/browse/MERL-#{msg.match[1]}"
-
-  robot.respond /kennen me/i, (msg) ->
-    msg.send "http://i.imgur.com/y2Sr9.gif"
