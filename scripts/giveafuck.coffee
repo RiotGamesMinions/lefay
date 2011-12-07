@@ -3,4 +3,4 @@
 
 module.exports = (robot) ->
   robot.hear /don't give a fuck/i, (msg) ->
-    msg.send "seems pretty low: http://mlkshk.com/r/92EL"
+    msg.send "seems pretty low: http://i.imgur.com/5PCPZ.gif"
