@@ -15,5 +15,8 @@ module.exports = (robot) ->
   robot.hear /new sequences/i, (msg) ->
     msg.send "I have a BETA sequence I've been working on. Would you like to see it?"
 
-  robot.respond /.*(hat wobble|flarhgunnstow).*/i, (msg) ->
+  robot.respond /.*hat wobble.*/i, (msg) ->
+    msg.send "Yes.\nhttp://i.imgur.com/4asZA.gif"
+
+  robot.respond /.*flarhgunnstow.*/i, (msg) ->
     msg.send "Yes.\nhttp://29.media.tumblr.com/tumblr_l2e4bbhrzl1qzad9ao1_400.gif"
