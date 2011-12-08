@@ -1,5 +1,5 @@
 # Display a seal of approval
-# 
+#
 # seal me - see a seal of approval
 
 images = [
@@ -15,7 +15,9 @@ images = [
  "http://i.imgur.com/jPhxc.gif",
  "http://i.imgur.com/QPVdM.gif",
  "http://i.imgur.com/3YRs6.gif",
- "http://i.imgur.com/eyo3k.jpg"
+ "http://i.imgur.com/eyo3k.jpg",
+ "http://i.imgur.com/xpGee.gif",
+ "http://i.imgur.com/PtlSV.gif"
 ]
 
 module.exports = (robot) ->
@@ -24,7 +26,7 @@ module.exports = (robot) ->
 
   robot.hear /seal of approval/i, (msg) ->
     msg.send "http://www.sharingmachine.com/prodimages/seal-litebox.jpg"
-  
+
   robot.hear /((good|great|nice) (work|job)|well done)/i, (msg) ->
     msg.send msg.random images
 
