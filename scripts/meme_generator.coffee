@@ -66,8 +66,8 @@ module.exports = (robot) ->
 	  memeGenerator msg, 79, 108785, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
-  robot.respond /hipster (hacker|dev) (.*)/i (msg) ->
-    memeGenerator msg, 350369, 2083681, "hipster " + msg.match[1], msg.match[2], (url) ->
+  robot.respond /hipster (hacker|dev) (.*)/i, (msg) ->
+    memeGenerator msg, 350369, 2083681, "hipster #{msg.match[1]}", msg.match[2], (url) ->
       msg.send url
 
 memeGenerator = (msg, generatorID, imageID, text0, text1, callback) ->
