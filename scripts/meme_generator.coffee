@@ -23,7 +23,7 @@
 #
 # hipster hacker <text> - Generates a hipster hacker doing something
 #
-# scumbag sysadmin <text> - Generates a scumbag sysadmin doing something
+# scumbag sysadmin <text>, <text> - Generates a scumbag sysadmin doing something
 
 module.exports = (robot) ->
   robot.respond /Y U NO (.+)/i, (msg) ->
@@ -72,8 +72,8 @@ module.exports = (robot) ->
     memeGenerator msg, 350369, 2083681, "hipster #{msg.match[1]}", msg.match[2], (url) ->
       msg.send url
 
-  robot.respond /scumbag sysadmin (.*)/i, (msg) ->
-    memeGenerator msg, 14361, 1141602, "SCUMBAG SYSADMIN", msg.match[2], (url) ->
+  robot.respond /scumbag sysadmin (.*), (.*)/i, (msg) ->
+    memeGenerator msg, 14361, 1141602, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
 memeGenerator = (msg, generatorID, imageID, text0, text1, callback) ->
