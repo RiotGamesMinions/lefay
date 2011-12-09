@@ -24,6 +24,8 @@
 # hipster hacker <text> - Generates a hipster hacker doing something
 #
 # scumbag sysadmin <text>, <text> - Generates a scumbag sysadmin doing something
+#
+# <text> better nerf irelia - Generates a better nerf Irelia pic
 
 module.exports = (robot) ->
   robot.respond /Y U NO (.+)/i, (msg) ->
@@ -74,6 +76,10 @@ module.exports = (robot) ->
 
   robot.respond /scumbag sysadmin (.*), (.*)/i, (msg) ->
     memeGenerator msg, 14361, 1141602, msg.match[1], msg.match[2], (url) ->
+      msg.send url
+
+  robot.respond /(.*) (better nerf Irelia)/i, (msg) ->
+    memeGenerator msg, 352682, 2090380, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
 memeGenerator = (msg, generatorID, imageID, text0, text1, callback) ->
