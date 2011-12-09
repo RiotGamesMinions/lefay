@@ -11,6 +11,9 @@ module.exports = (robot) ->
   robot.hear /images (aren't|not) working/i, (msg) ->
     msg.reply "Did you run `defaults write com.adiumX.adiumX MGMAIAllowStrangers -bool YES` in Terminal?"
 
+  robot.hear /(hack.*lefay|lefay.*hack|add.*script|change.*script)/i, (msg) ->
+    msg.reply "https://confluence.riotgames.com/display/PLATFORM/Lefay+Hacking+Guide"
+
   robot.hear /when.*merlin.*(release|deploy|update)/i, (msg) ->
     msg.send "https://confluence.riotgames.com/display/PLATFORM/Merlin+Release+Schedule"
 
