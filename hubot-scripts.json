@@ -2,5 +2,6 @@
  "animal.coffee", "ascii.coffee", "bees.coffee", "dice.coffee",
  "haters.coffee", "lolz.coffee", "news.coffee", "polite.coffee",
  "quote.coffee", "sudo.coffee", "twitter.coffee", "weather.coffee", "xkcd.coffee",
- "karma.coffee", "coin.coffee", "rimshot.coffee", "cowsay.coffee"
+ "karma.coffee", "coin.coffee", "rimshot.coffee", "cowsay.coffee",
+ "abstract.coffee", "ackbar.coffee", "sweetdude.coffee", "tweet-content.coffee", "xmas.js"
 ]
