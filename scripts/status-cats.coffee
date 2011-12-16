@@ -5,5 +5,5 @@
 
 
 module.exports = (robot) ->
-  robot.reply /status cat (\d+)/i, (msg) ->
+  robot.respond /status cat (\d+)/i, (msg) ->
     msg.send "http://httpcats.herokuapp.com/#{msg.match[1]}.jpg"
