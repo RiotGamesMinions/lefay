@@ -17,6 +17,9 @@ module.exports = (robot) ->
   robot.hear /when.*merlin.*(release|deploy|update)/i, (msg) ->
     msg.send "https://confluence.riotgames.com/display/PLATFORM/Merlin+Release+Schedule"
 
+  robot.hear /FEAPP08/i, (msg) ->
+    msg.send "LT Merlin, FEAPP08 is down.  Brad from Ops is looking into it."
+
   robot.hear /MERL-(\d+)/i, (msg) ->
     unless msg.match['input'].match /jira MERL/
       msg.send "https://jira.riotgames.com/browse/MERL-#{msg.match[1]}"
