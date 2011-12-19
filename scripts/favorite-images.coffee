@@ -22,5 +22,5 @@ module.exports = (robot) ->
   robot.respond /favorite images/i, (msg) ->
     robot.brain.data.favorite_images or= {}
     imageNames = for name, image of robot.brain.data.favorite_images
-      "#{name} -> #{image.replace(/https?:\/\//,'')}"
+      "#{name}"
     msg.send imageNames.join('\n')
