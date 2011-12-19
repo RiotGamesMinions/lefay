@@ -3,12 +3,24 @@
 # dancing cat
 #
 
+makeImageKey = (s) ->
+  s.toLowerCase().replace(/\ban?\b/g,'').replace(/\bthe\b/g,'').replace(/\s\s/g, ' ').replace(/^ /,'')
+
 module.exports = (robot) ->
-  robot.respond /show me dancing cat/i, (msg) ->
-    msg.send "https://d1ij7zv8zivhs3.cloudfront.net/assets/2719117/original/animated-dancing%20cat.gif"
+  robot.respond /save image (\S+) as (.*)/i, (msg) ->
+    robot.brain.data.favorite_images or= {}
+    robot.brain.data.favorite_images[makeImageKey(msg.match[2])] = msg.match[1]
+    msg.send "OK"
 
-  robot.respond /show me how many fucks i give/i, (msg) ->
-    msg.send "http://mlkshk.com/r/AGC6.gif"
+  robot.respond /show me (.*)/i, (msg) ->
+    robot.brain.data.favorite_images or= {}
+    if robot.brain.data.favorite_images[makeImageKey(msg.match[1])]?
+      msg.send robot.brain.data.favorite_images[makeImageKey(msg.match[1])]
+    else
+      msg.send "Not found. Use 'save image [URL] as [NAME]' to save one."
 
-  robot.respond /show me( a)? cat in a top hat/i, (msg) ->
-    msg.send "http://mlkshk.com/r/AJ1I.jpg"
+  robot.respond /favorite images/i, (msg) ->
+    robot.brain.data.favorite_images or= {}
+    imageNames = for name, image of robot.brain.data.favorite_images
+      "#{name} -> #{image.replace(/https?:\/\//,'')}"
+    msg.send imageNames.join('\n')
