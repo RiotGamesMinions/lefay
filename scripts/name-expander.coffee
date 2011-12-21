@@ -14,6 +14,12 @@ merlin_lax_members = [
   "Jamie Winsor"
 ]
 
+dashboard_members = [
+  "Mat Schaffer",
+  "Aaron Feng",
+  "Trotter Cashion"
+]
+
 merlin_members = merlin_remote_members.concat merlin_lax_members
 
 module.exports = (robot) ->
@@ -25,3 +31,6 @@ module.exports = (robot) ->
 
   robot.hear /^merlin-remote( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send merlin_remote_members.join(", ") + ":" + msg.match[2]
+
+  robot.hear /^dashboard( team| dudes| guys)*:(.+)/i, (msg) ->
+    msg.send dashboard_members.join(", ") + ":" + msg.match[2]
