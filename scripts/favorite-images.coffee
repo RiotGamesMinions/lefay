@@ -1,6 +1,8 @@
 # Some of our favorite images
 #
-# dancing cat
+# save image URL as SOME NAME FOR THE IMAGE -> save an image
+# show me SOME NAME FOR THE IMAGE -> show an image
+# favorite images -> see a list
 #
 
 makeImageKey = (s) ->
