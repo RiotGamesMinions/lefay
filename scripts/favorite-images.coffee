@@ -2,6 +2,7 @@
 #
 # save image URL as SOME NAME FOR THE IMAGE -> save an image
 # show me SOME NAME FOR THE IMAGE -> show an image
+# forget image SOME NAME FOR THE IMAGE -> forget it
 # favorite images -> see a list
 #
 
@@ -13,6 +14,13 @@ module.exports = (robot) ->
     robot.brain.data.favorite_images or= {}
     robot.brain.data.favorite_images[makeImageKey(msg.match[2])] = msg.match[1]
     msg.send "OK"
+
+  robot.respond /forget image (.*)/i, (msg) ->
+    if robot.brain.data.favorite_images[makeImageKey(msg.match[1])]?
+      delete robot.brain.data.favorite_images[makeImageKey(msg.match[1])]
+      msg.send "OK forgot it."
+    else
+      msg.send "Not found. Use 'save image [URL] as [NAME]' to save one."
 
   robot.respond /show me (.*)/i, (msg) ->
     robot.brain.data.favorite_images or= {}
