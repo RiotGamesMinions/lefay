@@ -20,9 +20,9 @@ module.exports = (robot) ->
 
   robot.respond /hot topics/i, (msg) ->
     robot.brain.data.hot_topics or= {}
-      memories = for phrase, memory of robot.brain.data.hot_topics
-        memory
-      msg.send memories.join("\n")
+    memories = for phrase, memory of robot.brain.data.hot_topics
+      memory
+    msg.send memories.join("\n")
 
   robot.hear /(.+)/i, (msg) ->
     text = msg.message.text
