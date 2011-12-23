@@ -12,7 +12,7 @@ module.exports = (robot) ->
     msg.send whoHasSupport(robot)
     msg.topic whoHasSupport(robot)
 
-  robot.respond /(\w+) (is|has) support.*/i, (msg) ->
+  robot.respond /(.*) has support this sprint/i, (msg) ->
     robot.brain.data.support or= {}
     robot.brain.data.support['person'] = msg.match[1]
     msg.send whoHasSupport(robot)
