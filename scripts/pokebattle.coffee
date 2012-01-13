@@ -168,7 +168,7 @@ module.exports = (robot) ->
     msg.send "A wild #{poke} appears!"
     msg.send "http://serebii.net/Pkmn_Green/#{pad(pokemon.indexOf(poke) + 1, 3)}.gif"
 
-  robot.hear new RegExp("("+pokemon.map(function(str) { return "\b#{str}\b" }).join("|")+")", 'i'), (msg) ->
+  robot.hear new RegExp("("+pokemon.map((str) -> "\b#{str}\b").join("|")+")", 'i'), (msg) ->
     poke = msg.match[1]
     poke = poke[0].toUpperCase() + poke[1..-1].toLowerCase()
     msg.send "#{poke}, I choose you!"
