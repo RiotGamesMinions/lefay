@@ -163,12 +163,12 @@ pad = (num, width) ->
   return num
 
 module.exports = (robot) ->
-  robot.hear /.*(pokemon|grass|bush|cave|forest|wildf).*/i, (msg) ->
+  robot.hear /.*(pokemon|grass|bush|cave|forest|wild).*/i, (msg) ->
     poke = msg.random(pokemon)
     msg.send "A wild #{poke} appears!"
     msg.send "http://serebii.net/Pkmn_Green/#{pad(pokemon.indexOf(poke) + 1, 3)}.gif"
 
-  robot.hear new RegExp("("+pokemon.map((str) -> "\b#{str}\b").join("|")+")", 'i'), (msg) ->
+  robot.hear new RegExp("(" + pokemon.map((str) -> "\\b#{str}\\b").join("|") + ")", 'i'), (msg) ->
     poke = msg.match[1]
     poke = poke[0].toUpperCase() + poke[1..-1].toLowerCase()
     msg.send "#{poke}, I choose you!"
