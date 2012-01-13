@@ -168,8 +168,7 @@ module.exports = (robot) ->
     msg.send "A wild #{poke} appears!"
     msg.send "http://serebii.net/Pkmn_Green/#{pad(pokemon.indexOf(poke) + 1, 3)}.gif"
 
-for poke in pokemon
-  module.exports = (robot) ->
+  for poke in pokemon
     robot.hear new RegExp(poke, 'i'), (msg) ->
       msg.send "#{poke}, I choose you!"
       msg.send "http://serebii.net/Pkmn_Green/#{pad(pokemon.indexOf(poke) + 1, 3)}.gif"
