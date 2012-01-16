@@ -37,3 +37,6 @@ module.exports = (robot) ->
 
   robot.respond /warwick me/i, (msg) ->
     msg.send "http://i.imgur.com/UdJzq.gif"
+  
+  robot.hear /true terror/i, (msg) ->
+    msg.send "http://www.youtube.com/watch?v=5GyxaeeoXJk"
