@@ -11,7 +11,8 @@ merlin_lax_members = [
   "Jesse Howarth",
   "Josiah Kiehl",
   "mmatsumura",
-  "Jamie Winsor"
+  "Jamie Winsor",
+  "Istvan"
 ]
 
 dashboard_members = [
