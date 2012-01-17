@@ -25,13 +25,13 @@ merlin_members = merlin_remote_members.concat merlin_lax_members
 
 module.exports = (robot) ->
   robot.hear /^merlin( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send merlin_members.join(", ") + ":" + msg.match[2]
+    msg.send merlin_members.join(", ") + ": ^^"
 
   robot.hear /^merlin-lax( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send merlin_lax_members.join(", ") + ":" + msg.match[2]
+    msg.send merlin_lax_members.join(", ") + ": ^^"
 
   robot.hear /^merlin-remote( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send merlin_remote_members.join(", ") + ":" + msg.match[2]
+    msg.send merlin_remote_members.join(", ") + ": ^^"
 
   robot.hear /^dashboard( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send dashboard_members.join(", ") + ":" + msg.match[2]
+    msg.send dashboard_members.join(", ") + ": ^^"
