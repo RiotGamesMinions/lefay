@@ -6,7 +6,7 @@ module.exports = (robot) ->
   robot.hear /baws/i, (msg) ->
     msg.send "http://mlkshk.com/r/BMPM.gif"
   robot.hear /it work(s|ed)/i, (msg) ->
-    msg.send "http://mlkshk.com/r/BM7L"
+    msg.send "http://mlkshk.com/r/BM7L.gif"
   robot.hear /cat falling off a table/i, (msg) ->
     msg.send "http://mlkshk.com/r/BJNO.gif"
   
