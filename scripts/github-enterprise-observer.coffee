@@ -7,8 +7,8 @@ ghe_responder = (repo, target) ->
     return "#{ghe_base_url}/#{repo}/commit/#{target}"
   return "#{ghe_base_url}/#{repo}/tree/#{target}"
 
-module.exports = (robot) ->
-  robot.hear /\bmerlin:(\w+)\b/i, (msg) ->
-    if msg.message.text.match(/thor merlin:/)
-      return
-    msg.send(ghe_responder("merlin", msg.match[1]))
+# module.exports = (robot) ->
+#   robot.hear /\bmerlin:(\w+)\b/i, (msg) ->
+#     if msg.message.text.match(/thor merlin:/)
+#       return
+#     msg.send(ghe_responder("merlin", msg.match[1]))
