@@ -3,7 +3,7 @@
 # merlin: <your message>
 
 merlin_remote_members = [
-  "Cliff Dickerson",
+  "cdickerson",
   "michael.ivey",
 ]
 
