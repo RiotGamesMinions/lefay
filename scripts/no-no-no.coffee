@@ -5,3 +5,5 @@ module.exports = (robot) ->
     msg.send "http://mlkshk.com/r/BVJG.gif"
   robot.hear /on my (shit )?list/i, (msg) ->
     msg.send "http://mlkshk.com/r/BURZ.gif"
+  robot.hear /razzle dazzle/i, (msg) ->
+    msg.send "http://mlkshk.com/r/BQVH.gif"
