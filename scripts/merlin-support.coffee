@@ -1,6 +1,7 @@
 # Track Merlin support person
 #
-# support is <person> <phone>  - tell bot who is doing support
+# <person> has support this sprint - tell lefay who is doing support
+# support can be reach at <phone number> - tell lefay how the support person can be reached
 # who is support?              - find out who is covering merlin support
 
 whoHasSupport = (robot) ->
