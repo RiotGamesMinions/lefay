@@ -10,7 +10,6 @@ merlin_remote_members = [
 merlin_lax_members = [
   "Jesse Howarth",
   "Josiah Kiehl",
-  "mmatsumura",
   "Jamie Winsor",
   "Istvan"
 ]
