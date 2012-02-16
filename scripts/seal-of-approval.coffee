@@ -19,7 +19,11 @@ images = [
  "http://i.imgur.com/xpGee.gif",
  "http://i.imgur.com/PtlSV.gif",
  "http://mlkshk.com/r/AHDT.gif",
- "http://mlkshk.com/r/CIUZ.gif"
+ "http://mlkshk.com/r/CIUZ.gif",
+ "http://i.imgur.com/GOwDa.gif",
+ "http://i.imgur.com/iZHD0.gif",
+ "http://i.imgur.com/Uug2x.gif",
+ "http://i.imgur.com/NJcSZ.gif"
 ]
 
 module.exports = (robot) ->
