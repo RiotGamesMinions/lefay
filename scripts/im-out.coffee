@@ -9,12 +9,10 @@ module.exports = (robot) ->
     msg.send "http://mlkshk.com/r/BM7L.gif"
   robot.hear /cat falling off a table/i, (msg) ->
     msg.send "http://mlkshk.com/r/BJNO.gif"
-  robot.hear /ugh/i, (msg) ->
+  robot.hear /\bugh/i, (msg) ->
     msg.send "http://i.imgur.com/5qOPW.gif"
   robot.hear /what.*going on/i, (msg) ->
     msg.send "http://i.imgur.com/pgG2z.gif"
-  robot.hear /you got it/i, (msg) ->
-    msg.send "http://28.media.tumblr.com/tumblr_ltp4xqYG2b1qzosj0o1_400.gif"
   robot.hear /you got it/i, (msg) ->
     msg.send "http://28.media.tumblr.com/tumblr_ltp4xqYG2b1qzosj0o1_400.gif"
 
