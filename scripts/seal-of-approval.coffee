@@ -24,7 +24,8 @@ images = [
  "http://i.imgur.com/iZHD0.gif",
  "http://i.imgur.com/Uug2x.gif",
  "http://i.imgur.com/NJcSZ.gif",
- "http://i.imgur.com/FSHXA.gif"
+ "http://i.imgur.com/FSHXA.gif",
+ "http://i.imgur.com/bpHdq.gif"
 ]
 
 module.exports = (robot) ->
@@ -34,7 +35,7 @@ module.exports = (robot) ->
   robot.hear /seal of approval/i, (msg) ->
     msg.send "http://www.sharingmachine.com/prodimages/seal-litebox.jpg"
 
-  robot.hear /((good|great|nice) (work|job)|well done)/i, (msg) ->
+  robot.hear /((good|great|nice) (work|job)|well done|fine business)/i, (msg) ->
     msg.send msg.random images
 
 
