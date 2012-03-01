@@ -1,6 +1,6 @@
 module.exports = (robot) ->
   robot.hear /triforce/i, (msg) ->
-    msg.send <<TRIFORCE
+    msg.send """
 ░░░░░░░░░░░░░▲
 ░░░░░░░░░░░░▲ ▲
 ░░░░░░░░░░░▲ ▲ ▲
@@ -32,4 +32,4 @@ module.exports = (robot) ->
 ░░░░░░░████████████
 ░░░░░░░░▓▓▓░░░░▓▓▓
 ░░░░░░░░▓▓▓░░░░▓▓▓
-TRIFORCE
+"""
