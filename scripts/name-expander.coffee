@@ -7,6 +7,13 @@ merlin_remote_members = [
   "michael.ivey",
 ]
 
+glastonbury_devs = [
+  "Jesse Howarth",
+  "Josiah Kiehl",
+  "michael.ivey",
+]
+
+
 merlin_lax_members = [
   "Jesse Howarth",
   "Josiah Kiehl",
@@ -35,3 +42,6 @@ module.exports = (robot) ->
 
   robot.hear /^dashboard( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send dashboard_members.join(", ") + ": ^^"
+
+  robot.hear /^glastonbury( team| dudes| guys)*:(.+)/i, (msg) ->
+    msg.send glastonbury_devs.join(", ") + ": ^^"
