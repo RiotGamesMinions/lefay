@@ -27,7 +27,8 @@ images = [
  "http://i.imgur.com/FSHXA.gif",
  "http://i.imgur.com/bpHdq.gif",
  "http://mlkshk.com/r/CYHO.gif",
- "http://i.imgur.com/uM5NJ.gif"
+ "http://i.imgur.com/uM5NJ.gif",
+ "http://iforce.co.nz/i/0gi03qyg.ydq.gif"
 ]
 
 module.exports = (robot) ->
