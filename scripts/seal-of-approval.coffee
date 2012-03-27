@@ -38,7 +38,7 @@ module.exports = (robot) ->
   robot.hear /seal of approval/i, (msg) ->
     msg.send "http://www.sharingmachine.com/prodimages/seal-litebox.jpg"
 
-  robot.hear /((good|great|nice) (work|job)|well done|fine business)/i, (msg) ->
+  robot.hear /((good|great|nice) (work|job)|well done|fine business|excellent|so (fucking )?good)/i, (msg) ->
     msg.send msg.random images
 
 
