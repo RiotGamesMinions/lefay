@@ -18,7 +18,6 @@ merlin_lax_members = [
   "Jesse Howarth",
   "Josiah Kiehl",
   "Jamie Winsor",
-  "Istvan",
   "Chong Yan",
 ]
 
