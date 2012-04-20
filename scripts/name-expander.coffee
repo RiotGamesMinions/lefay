@@ -17,6 +17,7 @@ glastonbury_devs = [
 merlin_lax_members = [
   "Jesse Howarth",
   "Josiah Kiehl",
+  "Jkiehl",
   "Jamie Winsor",
   "Chong Yan",
 ]
