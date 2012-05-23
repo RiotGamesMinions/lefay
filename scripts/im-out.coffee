@@ -18,4 +18,5 @@ module.exports = (robot) ->
     msg.send "http://28.media.tumblr.com/tumblr_ltp4xqYG2b1qzosj0o1_400.gif"
   robot.hear /brb.*killing/i, (msg) ->
     msg.send "http://i.imgur.com/kPEzh.gif"
-
+  robot.hear /it\'s working/i, (msg) ->
+    msg.send "http://i.imgur.com/fqUYl.gif"
