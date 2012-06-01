@@ -10,6 +10,7 @@ JiraSettings =
         priority: process.env.HUBOT_JIRA_PRIORITY || "Minor"
         type: process.env.HUBOT_JIRA_ISSUE_TYPE || "Emergent Task"
 JiraRPC = new JiraClient.JiraRPC JiraSettings.user, JiraSettings.pass, JiraSettings.host
+JiraREST = new JiraClient.JiraREST JiraSettings.user, JiraSettings.password, JiraSettings.host
 
 module.exports = (robot) ->
         robot.respond /jira check/i, (msg) ->
@@ -70,3 +71,10 @@ module.exports = (robot) ->
                                         getPriority(key, summary, response)
 
                 getProject(msg.match[1], msg.match[2])
+        robot.respond /jira search (.+)/i, (msg) ->
+                JiraREST.get 'search', {jql: msg[1]}, (error, data) ->
+                        if error
+                                msg.send "ERROR: #{error}"
+                        else
+                                for issue in data['issues']
+                                        msg.send "#{issue['key']}: #{issue['fields']['summary']}"
