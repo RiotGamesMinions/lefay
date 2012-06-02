@@ -3,6 +3,8 @@
 # jira new <PROJECT> <SUMMARY> - Opens a new JIRA ticket for project
 
 JiraClient = require('node-jira/lib/jira_client')
+util = require('util')
+
 JiraSettings =
         user: process.env.HUBOT_JIRA_USERNAME
         pass: process.env.HUBOT_JIRA_PASSWORD
@@ -77,7 +79,6 @@ module.exports = (robot) ->
                         if error
                                 msg.send "ERROR: #{error}"
                         else
-                                var util = require('util')
                                 util.inspect(data)
                                 for issue in data['issues']
                                         msg.send "#{issue['key']}: #{issue['fields']['summary']}"
