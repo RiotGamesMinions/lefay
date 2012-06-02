@@ -73,8 +73,10 @@ module.exports = (robot) ->
                 getProject(msg.match[1], msg.match[2])
         robot.respond /jira search (.+)/i, (msg) ->
                 JiraREST.get 'search', {jql: msg[1]}, (error, data) ->
+                        msg.send "Searching..."
                         if error
                                 msg.send "ERROR: #{error}"
                         else
                                 for issue in data['issues']
                                         msg.send "#{issue['key']}: #{issue['fields']['summary']}"
+                        msg.send "Searched!"
