@@ -79,7 +79,8 @@ module.exports = (robot) ->
                         if error
                                 msg.send "ERROR: #{error}"
                         else
-                                msg.send(util.inspect(data))
-                                for issue in data['issues']
-                                        msg.send "#{issue['key']}: #{issue['fields']['summary']}"
-                        msg.send "Searched!"
+                                if data['total'] == 0
+                                        msg.send "No issues found!"
+                                else
+                                        for issue in data['issues']
+                                                msg.send "#{issue['key']}: #{issue['fields']['summary']}"
