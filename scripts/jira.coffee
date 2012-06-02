@@ -79,7 +79,7 @@ module.exports = (robot) ->
                         if error
                                 msg.send "ERROR: #{error}"
                         else
-                                util.inspect(data)
+                                msg.send(util.inspect(data))
                                 for issue in data['issues']
                                         msg.send "#{issue['key']}: #{issue['fields']['summary']}"
                         msg.send "Searched!"
