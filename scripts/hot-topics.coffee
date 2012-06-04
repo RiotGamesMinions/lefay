@@ -27,6 +27,6 @@ module.exports = (robot) ->
   robot.hear /(.+)/i, (msg) ->
     text = msg.message.text
     unless text.match 'hot topic'
-      memories = for phrase, memory of robot.brain.data.hot_topics when text.match(phrase)
+      memories = for phrase, memory of robot.brain.data.hot_topics when text.match(phrase.toLowerCase())
         memory
       msg.send memories.join("\n")
