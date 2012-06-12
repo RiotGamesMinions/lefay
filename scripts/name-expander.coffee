@@ -11,8 +11,8 @@ glastonbury_devs = [
   "Jesse Howarth",
   "Josiah Kiehl",
   "michael.ivey",
+  "Chong Yan",
 ]
-
 
 merlin_lax_members = [
   "Jesse Howarth",
@@ -22,10 +22,8 @@ merlin_lax_members = [
   "Chong Yan",
 ]
 
-dashboard_members = [
-  "Mat Schaffer",
-  "Aaron Feng",
-  "Trotter Cashion"
+chef_repo_mergers = [
+  "Jesse Howarth",
 ]
 
 merlin_members = merlin_remote_members.concat merlin_lax_members
@@ -40,8 +38,8 @@ module.exports = (robot) ->
   robot.hear /^merlin-remote( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send merlin_remote_members.join(", ") + ": ^^"
 
-  robot.hear /^dashboard( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send dashboard_members.join(", ") + ": ^^"
-
   robot.hear /^glastonbury( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send glastonbury_devs.join(", ") + ": ^^"
+
+  robot.hear /^mergers:(.+)/i, (msg) ->
+    msg.send chef_repo_mergers.join(", ") + ": ^^"
