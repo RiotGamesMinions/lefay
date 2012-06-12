@@ -24,6 +24,7 @@ merlin_lax_members = [
 
 chef_repo_mergers = [
   "Jesse Howarth",
+  "michael.ivey",
 ]
 
 merlin_members = merlin_remote_members.concat merlin_lax_members
