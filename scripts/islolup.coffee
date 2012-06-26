@@ -1,4 +1,10 @@
-# Checks to see if league of legends is up
+# Description:
+#   Checks to see if league of legends is up
+# Commands:
+#   islolup - Checks isleagueoflegendsup.com to see if LoL is up
+# Author:
+#   mmatsumura
+
 module.exports = (robot) ->
   robot.respond /islolup/i, (msg) ->
     msg.http("http://isleagueoflegendsup.com")
