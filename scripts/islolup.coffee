@@ -6,7 +6,7 @@ module.exports = (robot) ->
         titlebar: "1"
       })
       .get() (err, res, body) ->
-        title = /<title>([^<]+)<\/title>/.exec(body)
+        title = /document\.title="([^\"]+)"/.exec(body)
         if title
           msg.send title[1]
         else
