@@ -7,7 +7,7 @@ merlin_remote_members = [
   "michael.ivey",
 ]
 
-glastonbury_devs = [
+ef_devs = [
   "Jesse Howarth",
   "Josiah Kiehl",
   "michael.ivey",
@@ -31,17 +31,17 @@ chef_repo_mergers = [
 merlin_members = merlin_remote_members.concat merlin_lax_members
 
 module.exports = (robot) ->
-  robot.hear /^merlin( team| dudes| guys)*:(.+)/i, (msg) ->
+  robot.hear /^(merlin|dat)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send merlin_members.join(", ") + ": ^^"
 
-  robot.hear /^merlin-lax( team| dudes| guys)*:(.+)/i, (msg) ->
+  robot.hear /^(merlin|dat)-lax( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send merlin_lax_members.join(", ") + ": ^^"
 
-  robot.hear /^merlin-remote( team| dudes| guys)*:(.+)/i, (msg) ->
+  robot.hear /^(merlin|dat)-remote( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send merlin_remote_members.join(", ") + ": ^^"
 
-  robot.hear /^glastonbury( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send glastonbury_devs.join(", ") + ": ^^"
+  robot.hear /^(glastonbury|ef|environment factory|factory)( team| dudes| guys)*:(.+)/i, (msg) ->
+    msg.send ef_devs.join(", ") + ": ^^"
 
   robot.hear /^mergers:(.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
