@@ -2,30 +2,36 @@
 #
 # merlin: <your message>
 
+josiah = "Jkiehl"
+cliff = "cdickerson"
+ivey = "michael.ivey"
+chong = "Chong Yan"
+jamie = "Jamie Winsor"
+jesse = "Jesse Howarth"
+
 merlin_remote_members = [
-  "cdickerson",
-  "michael.ivey",
+  cliff,
+  ivey
 ]
 
 ef_devs = [
-  "Jesse Howarth",
-  "Josiah Kiehl",
-  "michael.ivey",
-  "Chong Yan",
+  jesse,
+  josiah,
+  ivey,
+  chong
 ]
 
 merlin_lax_members = [
-  "Jesse Howarth",
-  "Josiah Kiehl",
-  "Jkiehl",
-  "Jamie Winsor",
-  "Chong Yan",
+  jesse,
+  josiah,
+  jamie,
+  chong
 ]
 
 chef_repo_mergers = [
-  "Jesse Howarth",
-  "michael.ivey",
-  "cdickerson",
+  jesse,
+  ivey,
+  cliff
 ]
 
 merlin_members = merlin_remote_members.concat merlin_lax_members
