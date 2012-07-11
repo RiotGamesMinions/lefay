@@ -29,6 +29,7 @@ merlin_lax_members = [
 ]
 
 chef_repo_mergers = [
+  josiah,
   jesse,
   ivey,
   cliff
