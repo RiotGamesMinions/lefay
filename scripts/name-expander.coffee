@@ -8,6 +8,7 @@ ivey = "michael.ivey"
 chong = "Chong Yan"
 jamie = "Jamie Winsor"
 jesse = "Jesse Howarth"
+kyle = "kallan"
 
 merlin_remote_members = [
   cliff,
@@ -25,7 +26,8 @@ merlin_lax_members = [
   jesse,
   josiah,
   jamie,
-  chong
+  chong,
+  kyle
 ]
 
 chef_repo_mergers = [
