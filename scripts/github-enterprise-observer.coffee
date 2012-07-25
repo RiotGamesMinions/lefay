@@ -1,6 +1,6 @@
 # Watches for repo:branch_name and pastes links
 
-ghe_base_url = "https://github.riotgames.com/merlin"
+ghe_base_url = "https://gh.riotgames.com/merlin"
 
 ghe_responder = (repo, target) ->
   if target.match(/[a-f0-9]{40}/ig)
