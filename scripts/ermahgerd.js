@@ -123,6 +123,6 @@ module.exports = function(robot) {
             }
         }
 
-        return translatedWords.join(' ');
+        msg.send translatedWords.join(' ');
     });
 }
