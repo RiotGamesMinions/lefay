@@ -10,6 +10,8 @@ jamie = "Jamie Winsor"
 jesse = "Jesse Howarth"
 kyle = "kallan"
 
+dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN"]
+
 merlin_remote_members = [
   cliff,
   ivey
@@ -40,6 +42,9 @@ chef_repo_mergers = [
 merlin_members = merlin_remote_members.concat merlin_lax_members
 
 module.exports = (robot) ->
+  robot.hear /^(merlern|dert)( team| dudes| guys)*:(.+)/i, (msg) ->
+    msg.send dert_mermbers.join(", ") + ": ^^"
+    
   robot.hear /^(merlin|dat)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send merlin_members.join(", ") + ": ^^"
 
