@@ -104,7 +104,7 @@ var translate = function(word) {
 
 module.exports = function(robot) {
     robot.respond(/erm me:(.+)/i, function(msg){
-        text = msgres.match[1].toUpperCase();
+        text = msg.match[1].toUpperCase();
 
         var words = text.split(' '),
         translatedWords = [];
