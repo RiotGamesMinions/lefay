@@ -103,7 +103,7 @@ var translate = function(word) {
 };
 
 module.exports = function(robot) {
-    robot.respond(/erm me:(.+)/i, function(msg){
+    robot.respond(/erm me(.+)/i, function(msg){
         text = msg.match[1].toUpperCase();
 
         var words = text.split(' '),
