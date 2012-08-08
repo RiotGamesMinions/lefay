@@ -30,7 +30,20 @@ images = [
  "http://i.imgur.com/uM5NJ.gif",
  "http://iforce.co.nz/i/0gi03qyg.ydq.gif",
  "http://i.imgur.com/N2FEP.gif",
- "http://mlkshk.com/r/HB8K.gif"
+ "http://mlkshk.com/r/HB8K.gif",
+ "http://mlkshk.com/r/IBG9.gif",
+ "http://mlkshk.com/r/IBFX.gif",
+ "http://mlkshk.com/r/EK8A.gif",
+ "http://mlkshk.com/r/B1VG.gif",
+ "http://www.reactiongifs.com/wp-content/gallery/yes/rahr_yes.gif",
+ "http://www.reactiongifs.com/wp-content/gallery/yes/thumbsupobama.gif",
+ "http://www.reactiongifs.com/wp-content/gallery/yes/421.gif",
+ "http://www.reactiongifs.com/wp-content/gallery/yes/tumblr_lmk67yFtva1qba256.gif",
+ "http://www.reactiongifs.com/wp-content/uploads/2011/08/conana_approves87ab20690092.gif",
+ "http://gifsforum.com/images/gif/clap%20clap%20clap/grand/52514906-claping-.gif",
+ "http://gifsforum.com/images/gif/clap%20clap%20clap/grand/SAM-JACKSON-CLAPPING-GIF.gif",
+ "http://gifsforum.com/images/gif/clap%20clap%20clap/grand/deniroclap.gif",
+ "http://www.threadbombing.com/data/media/2/busey_clapping.gif"
 ]
 
 module.exports = (robot) ->
