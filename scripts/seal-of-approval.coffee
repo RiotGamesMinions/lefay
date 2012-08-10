@@ -43,7 +43,11 @@ images = [
  "http://gifsforum.com/images/gif/clap%20clap%20clap/grand/52514906-claping-.gif",
  "http://gifsforum.com/images/gif/clap%20clap%20clap/grand/SAM-JACKSON-CLAPPING-GIF.gif",
  "http://gifsforum.com/images/gif/clap%20clap%20clap/grand/deniroclap.gif",
- "http://www.threadbombing.com/data/media/2/busey_clapping.gif"
+ "http://www.threadbombing.com/data/media/2/busey_clapping.gif",
+ "http://i.imgur.com/bhKp2.gif",
+ "http://i.imgur.com/3w1ej.gif",
+ "http://i.imgur.com/JSBTl.gif",
+ "http://i.imgur.com/NnBHS.gif"
 ]
 
 module.exports = (robot) ->
