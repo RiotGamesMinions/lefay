@@ -1,6 +1,7 @@
 images = [
   "http://i.imgur.com/XYfUN.gif",
-  "http://gifs.gifbin.com/062009/1245227615_colin_farrel.gif"
+  "http://gifs.gifbin.com/062009/1245227615_colin_farrel.gif",
+  "http://i.imgur.com/mQK1x.gif"
 ]
 
 module.exports = (robot) ->
