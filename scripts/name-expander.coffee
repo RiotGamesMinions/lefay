@@ -9,8 +9,9 @@ chong = "Chong Yan"
 jamie = "Jamie Winsor"
 jesse = "Jesse Howarth"
 kyle = "kallan"
+andrew = "Andrew Garson"
 
-dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN"]
+dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN"]
 
 merlin_remote_members = [
   cliff,
@@ -29,7 +30,8 @@ merlin_lax_members = [
   josiah,
   jamie,
   chong,
-  kyle
+  kyle,
+  andrew
 ]
 
 chef_repo_mergers = [
