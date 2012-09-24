@@ -4,7 +4,7 @@
 smiles = [":)", ":D", ":3"]
 
 module.exports = (robot) ->
-  robot.respond /botsnack/i, (msg) ->
+  robot.hear /botsnack/i, (msg) ->
     if Math.random() < 0.75
       msg.send smiles[0]
     else
