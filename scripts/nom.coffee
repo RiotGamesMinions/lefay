@@ -4,4 +4,4 @@
 
 module.exports = (robot) ->
   robot.hear /\bnom\b|food/i, (msg) ->
-    msg.send "http://replygif.net/i/152"
+    msg.send "http://i.imgur.com/maHWu.gif"
