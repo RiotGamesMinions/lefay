@@ -3,7 +3,8 @@
 # ^5 - high five!
 
 images = [
-  "http://i.imgur.com/PJFpN.gif"
+  "http://i.imgur.com/PJFpN.gif",
+  "http://mlkshk.com/r/JDV6.gif"
 ]
 
 module.exports = (robot) ->
