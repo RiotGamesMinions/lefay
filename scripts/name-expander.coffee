@@ -11,6 +11,8 @@ jesse = "Jesse Howarth"
 kyle = "kallan"
 andrew = "Andrew Garson"
 justin = "Justin Campbell"
+trotter = "Trotter Cashion"
+afeng = "Aaron Feng"
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
@@ -43,6 +45,11 @@ chef_repo_mergers = [
   cliff
 ]
 
+mashion_devs = [
+  trotter,
+  afeng
+]
+
 merlin_members = merlin_remote_members.concat merlin_lax_members
 
 module.exports = (robot) ->
@@ -60,6 +67,9 @@ module.exports = (robot) ->
 
   robot.hear /^(glastonbury|ef|environment factory|factory)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send ef_devs.join(", ") + ": ^^"
+
+  robot.hear /^(mashion)( team| dudes| guys)*:(.+)/i, (msg) ->
+    msg.send mashion_devs.join(", ") + ": ^^"
 
   robot.hear /^mergers:(.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
