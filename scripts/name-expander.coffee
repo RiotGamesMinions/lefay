@@ -14,7 +14,7 @@ justin = "Justin Campbell"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
 
-noc_members = ["Carter1", "mrobinson"]
+noc_members = ["Carter1", "mrobinson", "jdowns" "jdowns1" "jdowns2" "jtramullas" "nstuhring"]
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
