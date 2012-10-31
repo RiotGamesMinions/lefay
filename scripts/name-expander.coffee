@@ -14,6 +14,8 @@ justin = "Justin Campbell"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
 
+noc_members = ["Carter1", "mrobinson"]
+
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
 merlin_remote_members = [
@@ -70,6 +72,9 @@ module.exports = (robot) ->
 
   robot.hear /^(mashion)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send mashion_devs.join(", ") + ": ^^"
+
+  robot.hear /^@?(noc)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send noc_members.join(", ") + ": ^^"
 
   robot.hear /^mergers:(.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
