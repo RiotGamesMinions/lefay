@@ -13,6 +13,7 @@ andrew = "Andrew Garson"
 justin = "Justin Campbell"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
+bennett = "bsprugel"
 
 noc_members = ["Carter1", "mrobinson", "jdowns", "jdowns1", "jdowns2", "jtramullas", "nstuhring", "ctrytten", "akim", "nsanches", "jkim", "prhee"]
 
@@ -37,7 +38,8 @@ merlin_lax_members = [
   jamie,
   chong,
   kyle,
-  andrew
+  andrew,
+  bennett
 ]
 
 chef_repo_mergers = [
