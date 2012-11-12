@@ -17,5 +17,5 @@ troll = """
 """
 
 module.exports = (robot) ->
-  robot.respond /troll me/i (msg) ->
+  robot.respond /*troll/i, (msg) ->
     msg.send troll
