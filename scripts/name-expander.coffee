@@ -13,6 +13,9 @@ andrew = "Andrew Garson"
 justin = "Justin Campbell"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
+bennett = "bsprugel"
+
+noc_members = ["Carter1", "mrobinson", "jdowns", "jdowns1", "jdowns2", "jtramullas", "nstuhring", "ctrytten", "akim", "nsanches", "jkim", "prhee"]
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
@@ -35,7 +38,8 @@ merlin_lax_members = [
   jamie,
   chong,
   kyle,
-  andrew
+  andrew,
+  bennett
 ]
 
 chef_repo_mergers = [
@@ -70,6 +74,9 @@ module.exports = (robot) ->
 
   robot.hear /^(mashion)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send mashion_devs.join(", ") + ": ^^"
+
+  robot.hear /^@?(noc)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send noc_members.join(", ") + ": ^^"
 
   robot.hear /^mergers:(.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
