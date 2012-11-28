@@ -25,7 +25,8 @@ dances = [
   "http://i.imgur.com/DFGNp.gif",
   "http://media.tumblr.com/tumblr_lrzrlymUZA1qbliwr.gif",
   "http://3deadmonkeys.com/gallery3/var/albums/random_stuff/Carlton-Dance-GIF.gif",
-  "http://i.imgur.com/a6Naj.gif"
+  "http://i.imgur.com/a6Naj.gif",
+  "http://mlkshk.com/r/LP86.gif"
 ]
 
 module.exports = (robot) ->
