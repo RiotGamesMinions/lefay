@@ -1,4 +1,5 @@
 twss = require 'twss'
+twss.threshold = 0.9
 
 module.exports = (robot) ->
   robot.hear /(.*)/, (msg)->
