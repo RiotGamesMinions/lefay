@@ -1,8 +1,13 @@
+nopes = [
+  "http://mlkshk.com/r/MCR5.gif",
+  "http://i.imgur.com/zCtbl.gif"
+]
+
 module.exports = (robot) ->
   robot.hear /(what? no|no no no).*/i, (msg) ->
     msg.send "http://mlkshk.com/r/AKHF.gif"
-  robot.hear /nope nope/i, (msg) ->
-    msg.send "http://i.imgur.com/zCtbl.gif"
+  robot.hear /nope/i, (msg) ->
+    msg.send msg.random nopes
   robot.hear /yes it is/i, (msg) ->
     msg.send "http://mlkshk.com/r/BVJG.gif"
   robot.hear /on my (shit )?list/i, (msg) ->
