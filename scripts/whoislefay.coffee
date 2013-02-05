@@ -13,10 +13,3 @@ module.exports = (robot) ->
 
   robot.hear /(hack.*lefay|lefay.*script|script.*lefay)/i, (msg) ->
     msg.reply "https://confluence.riotgames.com/display/PLATFORM/Lefay+Hacking+Guide"
-
-  robot.hear /when.*merlin.*(release|deploy|update)/i, (msg) ->
-    msg.send "https://confluence.riotgames.com/display/PLATFORM/Merlin+Release+Schedule"
-
-  robot.hear /MERL-(\d+)/i, (msg) ->
-    unless msg.match['input'].match /jira MERL/
-      msg.send "https://jira.riotgames.com/browse/MERL-#{msg.match[1]}"
