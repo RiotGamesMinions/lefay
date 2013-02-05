@@ -15,7 +15,6 @@ do
     fi
     git pull origin master
     npm install
-    cp xmpp.coffee node_modules/hubot/src/hubot/ # todo: make this not be needed
     echo "getting private scripts"
     (cd ../lefay-private-scripts ; git pull)
     cp ../lefay-private-scripts/scripts/* scripts/
