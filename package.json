@@ -15,8 +15,9 @@
   },
 
   "dependencies": {
-    "hubot": "1.1.11",
-    "hubot-scripts": "2.0.1",
+    "hubot": ">= 2.4.6",
+    "hubot-scripts": ">= 2.4.1",
+    "hubot-xmpp": ">= 0.1.3",
     "optparse": "1.0.3",
     "markov": ">= 0.0.6",
     "jsdom": "0.2.14"
