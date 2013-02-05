@@ -17,8 +17,9 @@
   "dependencies": {
     "hubot": "1.1.11",
     "hubot-scripts": "2.0.1",
-    "node-jira": "0.0.2",
     "optparse": "1.0.3",
-    "markov": ">= 0.0.6"
-  }
+    "markov": ">= 0.0.6",
+    "jsdom": "0.2.14"
+  },
+    "node-jira": "0.0.2"
 }
