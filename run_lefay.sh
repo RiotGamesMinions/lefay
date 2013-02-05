@@ -16,9 +16,12 @@ do
     git pull origin master
     npm install
     cp xmpp.coffee node_modules/hubot/src/hubot/ # todo: make this not be needed
+    echo "getting private scripts"
+    (cd ../lefay-private-scripts ; git pull)
+    cp ../lefay-private-scripts/scripts/* scripts/
     echo "running lefay!"
     bin/hubot -a xmpp -n lefay
-    echo -n "lefay stopped. waiting 10s before restart. pid is "
+    echo -n "lefay stopped. waiting 20s before restart. pid is "
     echo $$
-    sleep 10
+    sleep 20
 done
