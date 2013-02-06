@@ -31,7 +31,7 @@ module.exports = (robot) ->
           feed.init()
           count = msg.match[1] || 5
           items = feed.getItems(0, count)
-          msg.send item.getTitle() + ": " + item.getPermalink() + " (" + item.getComments()?.html + ")" for item in items
+          msg.send item.getTitle() + ": " + item.getPermalink() for item in items
         catch e
           console.log(e)
           msg.send "Something's gone awry"
@@ -54,7 +54,7 @@ module.exports = (robot) ->
            idx = (Number) msg.match[0].replace(/[^0-9]/g, '')
          try
            item = feed.getItems()[idx]
-           msg.send item.getTitle() + ": " + item.getPermalink() + " (" + item.getComments()?.html + ")"
+           msg.send item.getTitle() + ": " + item.getPermalink()
          catch e
            console.log(e)
            msg.send "Something's gone awry"
