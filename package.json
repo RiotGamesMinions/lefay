@@ -32,7 +32,7 @@
     "date-utils": ">=1.2.5",
     "natural": "0.1.19",
     "soupselect": "0.2.0",
-    "jira": "0.0.1",
+    "node-jira": "git://github.com/baz/node-jira.git#master",
     "twss": "0.1.5"
   }
 }
