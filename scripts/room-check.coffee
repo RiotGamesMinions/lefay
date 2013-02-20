@@ -1,4 +1,4 @@
 module.exports = (robot) ->
-  robot.respond /what room is this/i, (msg) ->
+  robot.respond /room check/i, (msg) ->
     msg.send msg.user.room
 
