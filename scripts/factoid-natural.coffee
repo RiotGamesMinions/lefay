@@ -31,7 +31,7 @@ compare = (tokens, factoidkey) ->
 
 module.exports = (robot) ->
   robot.hear /(.*)\?$/i, (msg) ->
-    stems = stemmer.tokenizeAndStem(msg.match[1])
+    stems = FTStemmer.tokenizeAndStem(msg.match[1])
     stems.unshift msg.message.user.room.replace(/@.*/,'')
     result = (k for k in factoidkeys when compare(stems,k))
     if result[0]
