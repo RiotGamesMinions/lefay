@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   None
+#   stemming <words> - how would natural factoid stem a set of words?
 #
 # Notes:
 #   None
@@ -16,12 +16,13 @@
 # Author:
 #   ivey
 
+TextMessage = require('hubot').TextMessage
 FTNatural = require('natural')
 FTStemmer = FTNatural.PorterStemmer
 
 factoidkeys = [
-  ['wtfischef', ['chef', 'what', 'is']],
-  ['smtest', ['sparklemotion', 'monkey', 'apple']]
+  ['merlinsupport', ['merlin', 'who', 'support']],
+  ['chefsupport', ['chef', 'who', 'support']]
 ]
 
 compare = (tokens, factoidkey) ->
@@ -30,9 +31,12 @@ compare = (tokens, factoidkey) ->
   contained.length == keywords.length
 
 module.exports = (robot) ->
+  robot.respond /stemming (.*)/i, (msg) ->
+    msg.send FTStemmer.tokenizeAndStem(msg.match[1]).toString()
+
   robot.hear /(.*)\?$/i, (msg) ->
     stems = FTStemmer.tokenizeAndStem(msg.match[1])
     stems.unshift msg.message.user.room.replace(/@.*/,'')
     result = (k for k in factoidkeys when compare(stems,k))
     if result[0]
-      robot.receive new TextMessage(msg.message.user, "~#{result[0]}")
+      robot.receive new TextMessage(msg.message.user, "~#{result[0][0]}")
