@@ -21,8 +21,8 @@ FTNatural = require('natural')
 FTStemmer = FTNatural.PorterStemmer
 
 factoidkeys = [
-  ['merlinsupport', ['merlin', 'who', 'support']],
-  ['chefsupport', ['chef', 'who', 'support']]
+  ['merlinsupport', ['merlin', 'support']],
+  ['chefsupport', ['chef', 'support']]
 ]
 
 compare = (tokens, factoidkey) ->
