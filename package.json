@@ -33,6 +33,7 @@
     "natural": "0.1.19",
     "soupselect": "0.2.0",
     "node-jira": "git://github.com/baz/node-jira.git#master",
-    "twss": "0.1.5"
+    "twss": "0.1.5",
+    "node-stringprep", "0.1.0"
   }
 }
