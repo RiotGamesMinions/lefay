@@ -22,7 +22,9 @@ FTStemmer = FTNatural.PorterStemmer
 
 factoidkeys = [
   ['merlinsupport', ['merlin', 'support']],
-  ['chefsupport', ['chef', 'support']]
+  ['chefsupport', ['chef', 'support']],
+  ['runitcentos', ['chef', 'runit', 'cento']],
+  ['runitcentos', ['cookbook', 'runit', 'cento']]
 ]
 
 compare = (tokens, factoidkey) ->
