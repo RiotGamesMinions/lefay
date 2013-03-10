@@ -16,6 +16,8 @@
 #   ~~<user> <factoid> - Same as ~tell, less typing
 #   <factoid>? - Same as ~<factiod> except for there is no response if not found
 #   hubot no, <factoid> is <some phrase, link, whatever> - Replaces the full definition of a factoid
+#   hubot factoids list - List all factoids
+#   hubot factoid delete "<factoid>" - delete a factoid
 #
 # Author:
 #   arthurkalm
@@ -57,7 +59,7 @@ class Factoids
     @cache[key]
 
   list: ->
-    Object.keys(@cache)
+    Object.keys(@cache).join('\n')
 
   tell: (person, key) ->
     factoid = this.get key
@@ -93,8 +95,8 @@ module.exports = (robot) ->
   robot.respond /no, (.+) is (.+)/i, (msg) ->
     msg.reply factoids.setFactoid msg.match[1], msg.match[2]
 
-  robot.respond /factoids lsit/i, (msg) ->
-    msg.send factoids.list.join('\n')
+  robot.respond /factoids? list/i, (msg) ->
+    msg.send factoids.list
 
-  robot.respond /factoid delete "(.*)"$/i, (msg) ->
+  robot.respond /factoids? delete "(.*)"$/i, (msg) ->
     msg.reply factoids.delFactoid msg.match[1]
