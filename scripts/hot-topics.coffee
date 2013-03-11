@@ -35,4 +35,5 @@ module.exports = (robot) ->
     unless text.match 'hot topic'
       memories = for phrase, memory of robot.brain.data.hot_topics when check(text, phrase)
         memory
-      msg.send memories.join("\n")
+      if memories.length > 0
+        msg.send memories.join("\n")
