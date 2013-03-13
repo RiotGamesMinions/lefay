@@ -15,6 +15,6 @@
  "sms.coffee", "steam.coffee", "swanson.coffee", "sweetdude.coffee", "tweet-content.coffee",
  "wikipedia.coffee", "wits.coffee", "wwls.coffee", "yoda-quotes.coffee",
  "yoda-pictures.coffee", "youtube-info.coffee", "xmas.js",
- "jira.coffee", "github-pulls.coffee", "github-issues.coffee", "github-activity.coffee",
+ "jira.coffee", "jira-issues.coffee", "github-pulls.coffee", "github-issues.coffee", "github-activity.coffee",
  "wordnik.coffee", "tell.coffee"
 ]
