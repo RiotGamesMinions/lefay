@@ -1,6 +1,7 @@
 nopes = [
   "http://mlkshk.com/r/MCR5.gif",
-  "http://i.imgur.com/zCtbl.gif"
+  "http://i.imgur.com/zCtbl.gif",
+  "http://mlkshk.com/r/P8AK.gif"
 ]
 
 module.exports = (robot) ->
