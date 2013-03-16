@@ -3,6 +3,6 @@ module.exports = (robot) ->
     room = msg.message.user.room
     msg.reply "OK. I'll come back later."
     setTimeout (->
-      robot.joinRoom room
+      robot.adapter.joinRoom jid: room
     ), 30000
-    robot.leaveRoom room
+    robot.adapter.leaveRoom jid: room
