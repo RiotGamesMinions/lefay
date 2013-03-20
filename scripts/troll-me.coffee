@@ -17,5 +17,6 @@ troll = """
 """
 
 module.exports = (robot) ->
-  robot.hear /.*\btroll.*/i, (msg) ->
+  robot.respond /troll me/i, (msg) ->
     msg.send troll
+    msg.send "Ugh."
