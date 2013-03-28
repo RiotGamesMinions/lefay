@@ -123,6 +123,6 @@ module.exports = function(robot) {
             }
         }
 
-        msg.send(translatedWords.join(' '));
+        msg.send(translatedWords.join(' ').replace(/^ */,''));
     });
 }
