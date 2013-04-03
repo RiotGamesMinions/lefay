@@ -16,7 +16,7 @@
 
   "dependencies": {
     "hubot": "2.4.8",
-    "hubot-scripts": ">= 2.4.2",
+    "hubot-scripts": "git://github.com/github/hubot-scripts.git",
     "hubot-xmpp": "git://github.com/markstory/hubot-xmpp.git",
     "optparse": "1.0.3",
     "markov": ">= 0.0.6",
