@@ -1,5 +1,5 @@
 ["redis-brain.coffee", "tweet.coffee", "shipit.coffee", "achievement_unlocked.coffee",
- "animal.coffee", "ascii.coffee", "bees.coffee", "dice.coffee",
+ "animal.coffee", "ascii.coffee", "dice.coffee",
  "haters.coffee", "lolz.coffee", "news.coffee", "polite.coffee",
  "quote.coffee", "sudo.coffee", "twitter.coffee", "weather.coffee", "xkcd.coffee",
  "karma.coffee", "coin.coffee", "rimshot.coffee", "cowsay.coffee",
