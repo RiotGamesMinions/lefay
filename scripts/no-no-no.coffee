@@ -5,7 +5,7 @@ nopes = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /(what? no|no no no).*/i, (msg) ->
+  robot.hear /(what\? no|no no no)(\W|$)/i, (msg) ->
     msg.send "http://mlkshk.com/r/AKHF.gif"
   robot.hear /nope/i, (msg) ->
     msg.send msg.random nopes
