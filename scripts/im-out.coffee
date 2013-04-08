@@ -1,7 +1,8 @@
 images = [
   "http://i.imgur.com/XYfUN.gif",
   "http://gifs.gifbin.com/062009/1245227615_colin_farrel.gif",
-  "http://i.imgur.com/mQK1x.gif"
+  "http://i.imgur.com/mQK1x.gif",
+  "http://mlkshk.com/r/PVR3.gif"
 ]
 
 module.exports = (robot) ->
@@ -13,8 +14,6 @@ module.exports = (robot) ->
     msg.send "http://mlkshk.com/r/BMPM.gif"
   robot.hear /cat falling off a table/i, (msg) ->
     msg.send "http://mlkshk.com/r/BJNO.gif"
-  robot.hear /\bugh/i, (msg) ->
-    msg.send "http://i.imgur.com/5qOPW.gif"
   robot.hear /you got it/i, (msg) ->
     msg.send "http://28.media.tumblr.com/tumblr_ltp4xqYG2b1qzosj0o1_400.gif"
   robot.hear /brb.*killing/i, (msg) ->
