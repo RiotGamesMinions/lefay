@@ -14,10 +14,15 @@ justin = "Justin Campbell"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
 bennett = "bsprugel"
+akwan = "Alan Kwan"
+mark.soho = "Mark Soho"
+nmathrani = "Neeraj Mathrani"
 
 noc_members = ["Carter1", "mrobinson", "jdowns", "jdowns1", "jdowns2", "jtramullas", "nstuhring", "ctrytten", "akim", "nsanches", "jkim", "prhee"]
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
+
+build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "hzhang"]
 
 merlin_remote_members = [
   cliff,
@@ -56,6 +61,17 @@ mashion_devs = [
 
 merlin_members = merlin_remote_members.concat merlin_lax_members
 
+devinf_members = [
+  cliff,
+  akwan,
+  mark.soho,
+  nmathrani,
+  chong,
+  "akwan",
+  "mark.soho",
+  "nmathrani"
+]
+
 module.exports = (robot) ->
   robot.hear /^(merlern|dert)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send dert_mermbers.join(", ") + ": ^^"
@@ -80,3 +96,9 @@ module.exports = (robot) ->
 
   robot.hear /^mergers:(.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
+  
+  robot.here /^@?(build)( team| dudes| guys)*:(.+)/i, (msg) ->
+    msg.send build_members.join(", ") + ": ^^"
+
+  robot.here /^@?(di|devinf) ( team| dudes| guys)*:(.+)/i, (msg) ->
+    msg.send devinf_members.join(", ") + ": ^^" 
