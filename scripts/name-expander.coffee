@@ -97,8 +97,8 @@ module.exports = (robot) ->
   robot.hear /^mergers:(.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
 
-  robot.here /^@?(build)( team| dudes| guys)*:(.+)/i, (msg) ->
+  robot.hear /^@?(build)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send build_members.join(", ") + ": ^^"
 
-  robot.here /^@?(di|devinf) ( team| dudes| guys)*:(.+)/i, (msg) ->
+  robot.hear /^@?(di|devinf) ( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send devinf_members.join(", ") + ": ^^"
