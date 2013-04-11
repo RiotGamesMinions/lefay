@@ -64,12 +64,12 @@ merlin_members = merlin_remote_members.concat merlin_lax_members
 devinf_members = [
   cliff,
   akwan,
-  mark.soho,
+  marksoho,
   nmathrani,
   chong,
-  akwan,
-  marksoho,
-  nmathrani
+  "akwan",
+  "mark.soho",
+  "nmathrani"
 ]
 
 module.exports = (robot) ->
