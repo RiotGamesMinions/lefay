@@ -22,7 +22,7 @@ noc_members = ["Carter1", "mrobinson", "jdowns", "jdowns1", "jdowns2", "jtramull
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
-build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "hzhang"]
+build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "hzhang", "helen"]
 
 merlin_remote_members = [
   cliff,
@@ -97,8 +97,8 @@ module.exports = (robot) ->
   robot.hear /^mergers:(.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
 
-  robot.hear /^@?(build)( team| dudes| guys)*:(.+)/i, (msg) ->
+  robot.hear /^@?(build)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
     msg.send build_members.join(", ") + ": ^^"
 
-  robot.hear /^@?(di|devinf) ( team| dudes| guys)*:(.+)/i, (msg) ->
+  robot.hear /^(di|devinf) ( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send devinf_members.join(", ") + ": ^^"
