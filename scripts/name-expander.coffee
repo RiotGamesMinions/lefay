@@ -18,7 +18,7 @@ akwan = "Alan Kwan"
 marksoho = "Mark Soho"
 nmathrani = "Neeraj Mathrani"
 
-noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten", "akim", "nsanches", "jkim", "ebednick", "nhooper"]
+noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednick", "nhooper"]
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
