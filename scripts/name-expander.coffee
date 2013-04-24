@@ -77,7 +77,7 @@ sysadmin_members = ["ehays", "fnenz2", "fnenz", "lbernat", "Stephen Couratier", 
 
 neteng_members = ["Paul Davis", "amills", "jhorstman", "sean cline", "CheechandMChong"]
 
-dba_members = ["awhitwham", "agentile", "dminor"]
+dba_members = ["awhitwham", "agentile", "dminor", "tlekai", "thomas.lekai", "dryan", "dennis.ryan", "rbyrd"]
 
 
 module.exports = (robot) ->
