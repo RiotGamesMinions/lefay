@@ -72,6 +72,8 @@ devinf_members = [
   "nmathrani"
 ]
 
+sysadmin = ["ehays", "fnenz2", "fnenz", "lbernat", "Stephen Couratier", "kying", "hvellanki", "bnessler"]
+
 module.exports = (robot) ->
   robot.hear /^(merlern|dert)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send dert_mermbers.join(", ") + ": ^^"
@@ -102,3 +104,9 @@ module.exports = (robot) ->
 
   robot.hear /^(di|devinf)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send devinf_members.join(", ") + ": ^^"
+    
+  robot.hear /^@?(sysadmin)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send sysadmin.join(", ") + ": ^^"
+    
+  robot.hear /^@?(ops)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send sysadmin.join(", ") + ": ^^"
