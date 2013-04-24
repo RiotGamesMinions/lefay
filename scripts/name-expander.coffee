@@ -72,7 +72,13 @@ devinf_members = [
   "nmathrani"
 ]
 
-sysadmin = ["ehays", "fnenz2", "fnenz", "lbernat", "Stephen Couratier", "kying", "hvellanki", "bnessler"]
+
+sysadmin_members = ["ehays", "fnenz2", "fnenz", "lbernat", "Stephen Couratier", "kying", "hvellanki", "bnessler"]
+
+neteng_members = ["Paul Davis", "amills", "jhorstman", "sean cline", "CheechandMChong"]
+
+dba_members = ["awhitwham", "agentile", "dminor"]
+
 
 module.exports = (robot) ->
   robot.hear /^(merlern|dert)( team| dudes| guys)*:(.+)/i, (msg) ->
@@ -106,7 +112,13 @@ module.exports = (robot) ->
     msg.send devinf_members.join(", ") + ": ^^"
     
   robot.hear /^@?(sysadmin)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send sysadmin.join(", ") + ": ^^"
+    msg.send sysadmin_members.join(", ") + ": ^^"
     
   robot.hear /^@?(ops)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send sysadmin.join(", ") + ": ^^"
+    msg.send sysadmin_members.join(", ") + ": ^^"
+    
+  robot.hear /^@?(neteng)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send neteng_members.join(", ") + ": ^^"
+    
+  robot.hear /^@?(dba)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send dba_members.join(", ") + ": ^^"
