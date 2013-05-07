@@ -18,7 +18,7 @@ akwan = "Alan Kwan"
 marksoho = "Mark Soho"
 nmathrani = "Neeraj Mathrani"
 
-noc_members = ["Carter1", "mrobinson", "jdowns", "jdowns1", "jdowns2", "jtramullas", "nstuhring", "ctrytten", "akim", "nsanches", "jkim", "prhee"]
+noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednik", "nhooper"]
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JERS HERERTH", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
@@ -72,6 +72,14 @@ devinf_members = [
   "nmathrani"
 ]
 
+
+sysadmin_members = ["ehays", "fnenz2", "fnenz", "lbernat", "Stephen Couratier", "kying", "hvellanki", "bnessler"]
+
+neteng_members = ["Paul Davis", "amills", "jhorstman", "sean cline", "CheechandMChong"]
+
+dba_members = ["awhitwham", "agentile", "dminor", "tlekai", "thomas.lekai", "dryan", "dennis.ryan", "rbyrd"]
+
+
 module.exports = (robot) ->
   robot.hear /^(merlern|dert)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send dert_mermbers.join(", ") + ": ^^"
@@ -102,3 +110,15 @@ module.exports = (robot) ->
 
   robot.hear /^(di|devinf)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send devinf_members.join(", ") + ": ^^"
+    
+  robot.hear /^@?(sysadmin)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send sysadmin_members.join(", ") + ": ^^"
+    
+  robot.hear /^@?(ops)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send sysadmin_members.join(", ") + ": ^^"
+    
+  robot.hear /^@?(neteng)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send neteng_members.join(", ") + ": ^^"
+    
+  robot.hear /^@?(dba)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+    msg.send dba_members.join(", ") + ": ^^"
