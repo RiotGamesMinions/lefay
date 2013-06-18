@@ -31,14 +31,12 @@ merlin_remote_members = [
 ]
 
 ef_devs = [
-  jesse,
   josiah,
   ivey,
   chong
 ]
 
 merlin_lax_members = [
-  jesse,
   josiah,
   jamie,
   chong,
@@ -49,7 +47,6 @@ merlin_lax_members = [
 
 chef_repo_mergers = [
   josiah,
-  jesse,
   ivey,
   cliff
 ]
