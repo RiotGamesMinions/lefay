@@ -30,13 +30,6 @@ merlin_remote_members = [
   justin
 ]
 
-ef_devs = [
-  jesse,
-  josiah,
-  ivey,
-  chong
-]
-
 merlin_lax_members = [
   josiah,
   jamie,
@@ -91,9 +84,6 @@ module.exports = (robot) ->
 
   robot.hear /^(merlin|dat)-remote( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send merlin_remote_members.join(", ") + ": ^^"
-
-  robot.hear /^(glastonbury|ef|environment factory|factory)( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send ef_devs.join(", ") + ": ^^"
 
   robot.hear /^(mashion)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send mashion_devs.join(", ") + ": ^^"
