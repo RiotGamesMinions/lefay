@@ -56,11 +56,11 @@ devinf_members = [
   cliff,
   akwan,
   marksoho,
-  nmathrani,
   chong,
   "akwan",
   "mark.soho",
-  "nmathrani"
+  "msoho",
+  "cyan"
 ]
 
 
