@@ -6,7 +6,6 @@ josiah = "Jkiehl"
 cliff = "cdickerson"
 ivey = "michael.ivey"
 chong = "Chong Yan"
-jamie = "Jamie Winsor"
 jesse = "Jesse Howarth"
 kyle = "kallan"
 andrew = "Andrew Garson"
@@ -20,7 +19,7 @@ nmathrani = "Neeraj Mathrani"
 
 noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednik", "nhooper"]
 
-dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JKERL", "JERMAH WERNSER", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
+dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JKERL", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
 
 build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "hzhang", "helen"]
 
@@ -32,7 +31,6 @@ merlin_remote_members = [
 
 merlin_lax_members = [
   josiah,
-  jamie,
   chong,
   kyle,
   andrew,
