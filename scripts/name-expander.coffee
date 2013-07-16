@@ -9,7 +9,6 @@ chong = "Chong Yan"
 jesse = "Jesse Howarth"
 kyle = "kallan"
 andrew = "Andrew Garson"
-justin = "Justin Campbell"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
 bennett = "bsprugel"
@@ -19,14 +18,13 @@ nmathrani = "Neeraj Mathrani"
 
 noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednik", "nhooper"]
 
-dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JKERL", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN", "JERSTEN CERMPBELL"]
+dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JKERL", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN"]
 
 build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "hzhang", "helen"]
 
 merlin_remote_members = [
   cliff,
   ivey,
-  justin
 ]
 
 merlin_lax_members = [
