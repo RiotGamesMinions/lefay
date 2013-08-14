@@ -20,7 +20,7 @@ noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhrin
 
 dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JKERL", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN"]
 
-build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "hzhang", "helen"]
+build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "zeffron"]
 
 merlin_remote_members = [
   cliff,
