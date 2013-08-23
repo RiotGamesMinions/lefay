@@ -4,7 +4,7 @@
 
 josiah = "Jkiehl"
 cliff = "cdickerson"
-ivey = "michael.ivey"
+ivey = "ivey"
 chong = "Chong Yan"
 jesse = "Jesse Howarth"
 kyle = "kallan"
@@ -18,7 +18,7 @@ nmathrani = "Neeraj Mathrani"
 
 noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednik", "nhooper"]
 
-dert_mermbers = ["CDERCKERSERN", "MAHCHERLERVER", "JKERL", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN"]
+dert_mermbers = ["CDERCKERSERN", "ERVER", "JKERL", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN"]
 
 build_members = ["mvuong", "mstewart", "jromigh", "pmckeown", "pmckeown2", "pmckeown_home2", "zeffron"]
 
