@@ -18,7 +18,6 @@
     "hubot": "2.5.4",
     "hubot-scripts": "git://github.com/github/hubot-scripts.git",
     "hubot-xmpp": "git://github.com/markstory/hubot-xmpp.git",
-    "hubot-hipchat",
     "optparse": "1.0.3",
     "markov": ">= 0.0.6",
     "jsdom": "0.2.14",
