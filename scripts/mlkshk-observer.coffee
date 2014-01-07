@@ -18,8 +18,8 @@ _     = require 'underscore'
 
 module.exports = (robot) ->
 
-  robot.hear /http:\/\/mlkshk.com\/r\/(\w+)(\.(png|jpg|jpeg|gif))?/i, (msg) ->
-    imageId = msg.match[1]
+  robot.hear /http:\/\/(s\.)?mlkshk.com\/r\/(\w+)(\.(png|jpg|jpeg|gif))?/i, (msg) ->
+    imageId = msg.match[2]
 
     jsdom.env(
       html: "http://mlkshk.com/p/#{imageId}"
