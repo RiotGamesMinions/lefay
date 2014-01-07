@@ -15,9 +15,9 @@ do
     fi
     git pull origin hipchat
     npm install
-    # echo "getting private scripts"
-    # (cd ../lefay-private-scripts ; git pull)
-    # cp ../lefay-private-scripts/scripts/* scripts/
+    echo "getting private scripts"
+    (cd ../lefay-private-scripts ; git pull)
+    cp ../lefay-private-scripts/scripts/* scripts/
     echo "running lefay!"
     bin/hubot -a hipchat
     echo -n "lefay stopped. waiting 20s before restart. pid is "
