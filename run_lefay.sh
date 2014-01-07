@@ -1,4 +1,4 @@
-if [ "$PWD" != "/home/lefay/lefaybot" ]
+if [ "$PWD" != "/home/lefay/lefay" ]
 then
     echo "not in ~lefay/lefaybot, you need to run this from that dir"
     exit
