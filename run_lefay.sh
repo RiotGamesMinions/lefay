@@ -16,7 +16,7 @@ do
     git pull origin hipchat
     npm install
     echo "getting private scripts"
-    (cd ../lefay-private-scripts ; git pull)
+    (cd ../lefay-private-scripts ; git pull origin hipchat)
     cp ../lefay-private-scripts/scripts/* scripts/
     echo "running lefay!"
     bin/hubot -a hipchat
