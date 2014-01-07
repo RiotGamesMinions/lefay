@@ -2,37 +2,29 @@
 #
 # merlin: <your message>
 
-josiah = "Jkiehl"
-cliff = "cdickerson"
-ivey = "ivey"
-chong = "Chong Yan"
-jesse = "Jesse Howarth"
-kyle = "kallan"
-andrew = "Andrew Garson"
+josiah = "@jk"
+cliff = "@cliff"
+ivey = "@ivey"
+chong = "@ChongYan"
+kyle = "@kallan"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
-bennett = "bsprugel"
 akwan = "Alan Kwan"
 marksoho = "Mark Soho"
 nmathrani = "Neeraj Mathrani"
+steve = "@srude"
+fei = "@fei"
 
 noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednik", "nhooper"]
 
-dert_mermbers = ["CDERCKERSERN", "ERVER", "JKERL", "CHIN YERN", "KERLERN", "ERNDRERW GERSERN"]
-
 build_members = ["mvuong", "mstewart", "jromigh", "zeffron", "ilinkletter", "eyap"]
 
-merlin_remote_members = [
-  cliff,
+dat_members = [
   ivey,
-]
-
-merlin_lax_members = [
   josiah,
-  chong,
+  steve,
   kyle,
-  andrew,
-  bennett
+  fei
 ]
 
 chef_repo_mergers = [
@@ -45,8 +37,6 @@ mashion_devs = [
   trotter,
   afeng
 ]
-
-merlin_members = merlin_remote_members.concat merlin_lax_members
 
 devinf_members = [
   cliff,
@@ -68,17 +58,8 @@ dba_members = ["awhitwham", "agentile", "dminor", "tlekai", "thomas.lekai", "dry
 
 
 module.exports = (robot) ->
-  robot.hear /^(merlern|dert)( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send dert_mermbers.join(", ") + ": ^^"
-
-  robot.hear /^(merlin|dat)( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send merlin_members.join(", ") + ": ^^"
-
-  robot.hear /^(merlin|dat)-lax( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send merlin_lax_members.join(", ") + ": ^^"
-
-  robot.hear /^(merlin|dat)-remote( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send merlin_remote_members.join(", ") + ": ^^"
+  robot.hear /^@dat:? (.+)/i, (msg) ->
+    msg.send dat_members.join(", ") + ": ^^"
 
   robot.hear /^(mashion)( team| dudes| guys)*:(.+)/i, (msg) ->
     msg.send mashion_devs.join(", ") + ": ^^"
