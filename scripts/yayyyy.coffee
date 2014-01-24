@@ -3,7 +3,6 @@
 #
 
 yays = [
-  "http://mlkshk.com/r/KSB3.gif",
   "yayyyyyyy!\nhttp://i.imgur.com/zyJuF.gif"
 ]
 
