@@ -163,7 +163,7 @@ pad = (num, width) ->
   return num
 
 module.exports = (robot) ->
-  robot.hear /.*(pokemon|grass|bush|cave|forest|wild).*/i, (msg) ->
+  robot.hear /.*(pokemon|grass|bush|cave|forest).*/i, (msg) ->
     poke = msg.random(pokemon)
     msg.send "A wild #{poke} appears!"
     msg.send "http://serebii.net/Pkmn_Green/#{pad(pokemon.indexOf(poke) + 1, 3)}.gif"
