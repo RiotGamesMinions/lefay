@@ -14,6 +14,8 @@ marksoho = "Mark Soho"
 nmathrani = "Neeraj Mathrani"
 steve = "@srude"
 fei = "@fei"
+brad = "@brad"
+
 
 noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednik", "nhooper"]
 
@@ -24,7 +26,10 @@ dat_members = [
   josiah,
   steve,
   kyle,
-  fei
+  fei,
+  cliff,
+  chong,
+  brad
 ]
 
 chef_repo_mergers = [
@@ -61,29 +66,29 @@ module.exports = (robot) ->
   robot.hear /^@dat:? (.+)/i, (msg) ->
     msg.send dat_members.join(", ") + ": ^^"
 
-  robot.hear /^(mashion)( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send mashion_devs.join(", ") + ": ^^"
+  # robot.hear /^(mashion)( team| dudes| guys)*:(.+)/i, (msg) ->
+  #   msg.send mashion_devs.join(", ") + ": ^^"
 
-  robot.hear /^@?(noc)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send noc_members.join(", ") + ": ^^"
+  # robot.hear /^@?(noc)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+  #   msg.send noc_members.join(", ") + ": ^^"
 
-  robot.hear /^mergers:(.+)/i, (msg) ->
+  robot.hear /^@mergers:? (.+)/i, (msg) ->
     msg.send chef_repo_mergers.join(", ") + ": ^^"
 
-  robot.hear /^@?(build)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send build_members.join(", ") + ": ^^"
+  # robot.hear /^@?(build)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+  #   msg.send build_members.join(", ") + ": ^^"
 
-  robot.hear /^(di|devinf)( team| dudes| guys)*:(.+)/i, (msg) ->
-    msg.send devinf_members.join(", ") + ": ^^"
+  # robot.hear /^(di|devinf)( team| dudes| guys)*:(.+)/i, (msg) ->
+  #   msg.send devinf_members.join(", ") + ": ^^"
 
-  robot.hear /^@?(sysadmin)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send sysadmin_members.join(", ") + ": ^^"
+  # robot.hear /^@?(sysadmin)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+  #   msg.send sysadmin_members.join(", ") + ": ^^"
 
-  robot.hear /^@?(ops)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send sysadmin_members.join(", ") + ": ^^"
+  # robot.hear /^@?(ops)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+  #   msg.send sysadmin_members.join(", ") + ": ^^"
 
-  robot.hear /^@?(neteng)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send neteng_members.join(", ") + ": ^^"
+  # robot.hear /^@?(neteng)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+  #   msg.send neteng_members.join(", ") + ": ^^"
 
-  robot.hear /^@?(dba)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
-    msg.send dba_members.join(", ") + ": ^^"
+  # robot.hear /^@?(dba)( team| dudes| guys)*(:| )(.+)/i, (msg) ->
+  #   msg.send dba_members.join(", ") + ": ^^"
