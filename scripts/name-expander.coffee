@@ -5,7 +5,7 @@
 josiah = "@jk"
 cliff = "@cliff"
 ivey = "@ivey"
-chong = "@ChongYan"
+chong = "@cyan"
 kyle = "@kallan"
 trotter = "Trotter Cashion"
 afeng = "Aaron Feng"
@@ -28,7 +28,6 @@ dat_members = [
   kyle,
   fei,
   cliff,
-  chong,
   brad
 ]
 
