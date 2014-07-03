@@ -15,7 +15,7 @@
 scraper = require 'scraper'
 
 module.exports = (robot) ->
-  robot.hear /bug/i, (msg) ->
+  robot.hear /(bug|excuse|what was (is|was) the problem|what (is|was) wrong)/i, (msg) ->
     options = {
       'uri': 'http://programmerexcuses.com',
       'headers': {
