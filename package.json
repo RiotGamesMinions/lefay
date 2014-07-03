@@ -37,6 +37,14 @@
     "natural": "0.1.19",
     "node-jira": "git://github.com/baz/node-jira.git#master",
     "twss": "0.1.5",
-    "node-stringprep": "0.1.3"
+    "node-stringprep": "0.1.3",
+    "hubot-retro": ">= 0.0.0",
+    "hubot-suddendeath": ">= 0.0.0",
+    "hubot-victory": ">= 0.0.0",
+    "hubot-devops-reactions": ">= 0.0.0",
+    "hubot-hipchat-emoticons": ">= 1.3.0",
+    "gitio": "1.0.1",
+    "node-foursquare": "0.2.0",
+    "moment": "~2.5.0"
   }
 }

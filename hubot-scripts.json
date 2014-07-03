@@ -2,7 +2,7 @@
  "animal.coffee", "ascii.coffee", "dice.coffee",
  "haters.coffee", "lolz.coffee", "news.coffee", "polite.coffee",
  "quote.coffee", "sudo.coffee", "twitter.coffee", "weather.coffee", "xkcd.coffee",
- "karma.coffee", "coin.coffee", "rimshot.coffee", "cowsay.coffee",
+ "coin.coffee", "rimshot.coffee", "cowsay.coffee",
  "abstract.coffee", "ackbar.coffee", "applause.coffee",
  "availability.coffee", "aww.coffee", "bang-bang.coffee", "brb.coffee",
  "carlton.coffee", "cloudapp.coffee",
@@ -17,5 +17,5 @@
  "yoda-pictures.coffee", "youtube-info.coffee", "xmas.js",
  "jira.coffee", "github-pulls.coffee", "github-issues.coffee", "github-activity.coffee",
  "wordnik.coffee", "tell.coffee", "jokels.coffee", "mitch-hedberg.coffee", "ambush.coffee",
- "bees.coffee", "advice.coffee", "points.coffee", "catfacts.coffee"
+ "bees.coffee", "advice.coffee", "points.coffee", "catfacts.coffee", "travis.coffee"
 ]
