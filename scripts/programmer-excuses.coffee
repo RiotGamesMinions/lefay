@@ -13,9 +13,7 @@
 #   capoferro (shamelessly copied from rrix's archer.coffee)
 
 scraper = require 'scraper'
-
-module.exports = (robot) ->
-  robot.hear /(bug|excuse|what was (is|was) the problem|what (is|was) wrong)/i, (msg) ->
+action = (msg) ->
     options = {
       'uri': 'http://programmerexcuses.com',
       'headers': {
@@ -27,3 +25,8 @@ module.exports = (robot) ->
       quote = jQuery('.wrapper a').toArray()[0]
       dialog = '' + jQuery(quote).text().trim()
       msg.send dialog
+
+module.exports = (robot) ->
+  robot.hear /bug/i, action
+  robot.hear /excuse/i, action
+  robot.hear /what (is|was) the (problem|bug|issue)/i, action
