@@ -15,6 +15,7 @@ nmathrani = "Neeraj Mathrani"
 steve = "@srude"
 fei = "@fei"
 brad = "@brad"
+cquinn = "@cquinn"
 
 
 noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhring", "ctrytten1", "ctrytten", "akim", "nsanches", "jkim", "ebednik", "nhooper"]
@@ -28,7 +29,8 @@ dat_members = [
   kyle,
   fei,
   cliff,
-  brad
+  brad,
+  cquinn
 ]
 
 chef_repo_mergers = [
