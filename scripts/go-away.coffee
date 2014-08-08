@@ -17,7 +17,7 @@ module.exports = (robot) ->
   robot.brain.on 'loaded', =>
     robot.brain.data.always_join or= []
     console.log robot.brain.data.always_join
-    robot.adapter.joinRoom jid: room for room in robot.brain.data.always_join
+    robot.adapter.join jid: room for room in robot.brain.data.always_join
 
   robot.respond /stay in here/i, (msg) ->
     room = msg.message.user.room
