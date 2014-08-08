@@ -15,13 +15,12 @@
 
 module.exports = (robot) ->
   robot.brain.on 'loaded', =>
-    robot.brain.data.always_join or= []
+    robot.brain.data.always_join = []
     console.log robot.brain.data.always_join
-    robot.adapter.connector.join jid: room for room in robot.brain.data.always_join
+    robot.adapter.connector.join room for room in robot.brain.data.always_join
 
   robot.respond /stay in here/i, (msg) ->
-    console.log msg.message
-    room = msg.message.user.room
+    room = msg.message.user.reply_to
     console.log "Request to stay in #{room}"
     unless room in robot.brain.data.always_join
       robot.brain.data.always_join.push room
@@ -30,7 +29,7 @@ module.exports = (robot) ->
       msg.send "OK. I'll come back here whenever I login."
 
   robot.respond /stop coming in here/i, (msg) ->
-    room = msg.message.user.room
+    room = msg.message.user.reply_to
     console.log "Request to stop staying in #{room}"
     if room in robot.brain.data.always_join
       robot.brain.data.always_join = robot.brain.data.always_join.filter (e) -> e != room
@@ -39,17 +38,18 @@ module.exports = (robot) ->
       msg.send "OK. I'll stop coming in here when I login."
 
   robot.respond /go away/i, (msg) ->
-    room = msg.message.user.room
+    room = msg.message.user.reply_to
     msg.reply "OK. I'll come back in around 30 minutes."
     setTimeout (->
-      robot.adapter.joinRoom jid: room
+      robot.adapter.connector.join room
     ), 1800000
-    robot.adapter.leaveRoom jid: room
+    robot.adapter.connector.leave room
 
   robot.respond /go away forever/i, (msg) ->
+    room = msg.message.user.reply_to
     room = msg.message.user.room
     if room in robot.brain.data.always_join
       robot.brain.data.always_join = robot.brain.data.always_join.filter (e) -> e != room
       robot.brain.save()
     msg.reply "Jeez. OK."
-    robot.adapter.leaveRoom jid: room
+    robot.adapter.connector.leave room
