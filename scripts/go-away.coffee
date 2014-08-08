@@ -24,8 +24,8 @@ module.exports = (robot) ->
     console.log "Request to stay in #{room}"
     unless room in robot.brain.data.always_join
       robot.brain.data.always_join.push room
-      robot.brain.save()
       console.log robot.brain.data.always_join
+      robot.brain.save()
       msg.send "OK. I'll come back here whenever I login."
 
   robot.respond /stop coming in here/i, (msg) ->
@@ -33,9 +33,10 @@ module.exports = (robot) ->
     console.log "Request to stop staying in #{room}"
     if room in robot.brain.data.always_join
       robot.brain.data.always_join = robot.brain.data.always_join.filter (e) -> e != room
-      robot.brain.save()
       console.log robot.brain.data.always_join
-      msg.send "OK. I'll stop coming in here when I login."
+      robot.brain.save()
+      msg.send "OK. I'll stop coming in here. Invite me back if you change your mind."
+      robot.adapter.connector.leave room
 
   robot.respond /go away/i, (msg) ->
     room = msg.message.user.reply_to
@@ -43,13 +44,4 @@ module.exports = (robot) ->
     setTimeout (->
       robot.adapter.connector.join room
     ), 1800000
-    robot.adapter.connector.leave room
-
-  robot.respond /go away forever/i, (msg) ->
-    room = msg.message.user.reply_to
-    room = msg.message.user.room
-    if room in robot.brain.data.always_join
-      robot.brain.data.always_join = robot.brain.data.always_join.filter (e) -> e != room
-      robot.brain.save()
-    msg.reply "Jeez. OK."
     robot.adapter.connector.leave room
