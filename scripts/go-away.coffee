@@ -36,7 +36,7 @@ module.exports = (robot) ->
       console.log robot.brain.data.always_join
       robot.brain.save()
       msg.send "OK. I'll stop coming in here. Invite me back if you change your mind."
-      robot.adapter.connector.leave room
+      robot.adapter.connector.part room
 
   robot.respond /go away/i, (msg) ->
     room = msg.message.user.reply_to
@@ -44,4 +44,4 @@ module.exports = (robot) ->
     setTimeout (->
       robot.adapter.connector.join room
     ), 1800000
-    robot.adapter.connector.leave room
+    robot.adapter.connector.part room
