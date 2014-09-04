@@ -45,6 +45,7 @@
     "hubot-hipchat-emoticons": ">= 1.3.0",
     "gitio": "1.0.1",
     "node-foursquare": "0.2.0",
-    "moment": "~2.5.0"
+    "moment": "~2.5.0",
+    "hubot-google-hangouts": ">= 0.7.0"
   }
 }
