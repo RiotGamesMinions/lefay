@@ -4,7 +4,7 @@
 
 copperfields = [
   "http://i.imgur.com/asSfAoo.jpg",
-  "http://i.imgur.com/0PjzWYh"
+  "http://i.imgur.com/0PjzWYh.jpg"
 ]
 module.exports = (robot) ->
     msg.send ""
