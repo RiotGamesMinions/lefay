@@ -3,7 +3,8 @@
 # gotcha!
 
 copperfields = [
-  "http://i.imgur.com/asSfAoo.jpg"
+  "http://i.imgur.com/asSfAoo.jpg",
+  "http://i.imgur.com/0PjzWYh"
 ]
 module.exports = (robot) ->
     msg.send ""
