@@ -3,7 +3,6 @@
 # merlin: <your message>
 
 josiah = "@jk"
-cliff = "@cliff"
 ivey = "@ivey"
 chong = "@cyan"
 kyle = "@kallan"
@@ -28,7 +27,6 @@ dat_members = [
   steve,
   kyle,
   fei,
-  cliff,
   brad,
   CarlQuinn
 ]
@@ -45,7 +43,6 @@ mashion_devs = [
 ]
 
 devinf_members = [
-  cliff,
   akwan,
   marksoho,
   chong,
