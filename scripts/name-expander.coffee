@@ -33,8 +33,7 @@ dat_members = [
 
 chef_repo_mergers = [
   josiah,
-  ivey,
-  cliff
+  ivey
 ]
 
 mashion_devs = [
