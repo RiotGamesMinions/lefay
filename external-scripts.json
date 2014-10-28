@@ -1,2 +1,3 @@
 ["hubot-retro", "hubot-suddendeath", "hubot-victory", "hubot-devops-reactions",
- "hubot-hipchat-emoticons", "hubot-google-hangouts"]
+ "hubot-hipchat-emoticons", "hubot-google-hangouts", "hubot-shiptit", "hubot-google-images",
+ "hubot-google-translate", "hubot-http-status", "hubot-youtube"]
