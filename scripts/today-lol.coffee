@@ -28,7 +28,10 @@ today = [
   "I reported their Soraka for Assisting the Enemy Team",
   "I reported Skarner for bugging me",
   "I reported Wukong - wouldn't stop monkeying around",
-  "I reported Cho'Gath. He kept screaming at me"
+  "I reported Cho'Gath. He kept screaming at me",
+  "I reported Twisted Fate. He stacked the deck in their favor.",
+  "Jarvan really held our team together.",
+  "Veigar tried, but he always came up a little short."
 ]
 
 module.exports = (robot) ->
