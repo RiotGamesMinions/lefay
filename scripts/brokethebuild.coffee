@@ -14,8 +14,8 @@ images = [
 
 module.exports = (robot) ->
   #robot.hear /Project (.*) build (.*): (FAILURE|STILL FAILING)/i, (msg) ->
-  robot.hear /Project (.*) build (.*): FAILURE/i, (msg) ->
+  robot.hear /(.*) - #(\d+) FAILURE/i, (msg) ->
     msg.send msg.random images
 
-  robot.hear /Project .* build .*: SUCCESS/i, (msg) ->
-    msg.send "GOOD JOB, your build was a total SUCCESS!!!!1!!!! <3 <3 <3"
+  # robot.hear /(.*) - #(\d+) SUCCESS/i, (msg) ->
+  #   msg.send "GOOD JOB, your build was a total SUCCESS!!!!1!!!! <3 <3 <3"
