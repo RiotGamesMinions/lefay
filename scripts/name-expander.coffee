@@ -27,7 +27,6 @@ dat_members = [
   steve,
   kyle,
   fei,
-  brad,
   CarlQuinn
 ]
 

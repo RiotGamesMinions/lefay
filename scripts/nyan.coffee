@@ -3,5 +3,5 @@ nyans = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /.*(nyan|rainbow).*/i, (msg) ->
+  robot.hear /(^|\s)(nyan|rainbow)(\s|$)/i, (msg) ->
     msg.send msg.random nyans
