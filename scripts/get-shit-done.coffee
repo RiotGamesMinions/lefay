@@ -2,5 +2,5 @@
 #
 
 module.exports = (robot) ->
-  robot.hear /(gsd|get shit done)/i, (msg) ->
+  robot.hear /(get shit done)/i, (msg) ->
     msg.send "http://mlkshk.com/r/GZ3R.gif"
