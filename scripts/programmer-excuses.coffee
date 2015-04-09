@@ -27,6 +27,6 @@ action = (msg) ->
       msg.send dialog
 
 module.exports = (robot) ->
-  robot.hear /\sbug[\s?.!]/i, action
-  robot.hear /\sexcuse\s/i, action
-  robot.hear /what (is|was) the (problem|bug|issue)/i, action
+  robot.respond /\sbug[\s?.!]/i, action
+  robot.respond /\sexcuse\s/i, action
+  robot.respond /what (is|was) the (problem|bug|issue)/i, action
