@@ -38,7 +38,7 @@ module.exports = (robot) ->
       msg.send "OK. I'll stop coming in here. Invite me back if you change your mind."
       robot.adapter.connector.part room
 
-  robot.respond /go away/i, (msg) ->
+  robot.respond /(go away|gtfo)/i, (msg) ->
     room = msg.message.user.reply_to
     msg.reply "OK. I'll come back in around 30 minutes."
     setTimeout (->
