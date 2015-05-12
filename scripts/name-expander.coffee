@@ -22,12 +22,10 @@ noc_members = ["Carter1", "Cames1", "jdowns", "jdowns1", "jtramullas", "nstuhrin
 build_members = ["mvuong", "mstewart", "jromigh", "zeffron", "ilinkletter", "eyap"]
 
 dat_members = [
-  ivey,
-  josiah,
-  steve,
   kyle,
   fei,
-  CarlQuinn
+  CarlQuinn,
+  afeng
 ]
 
 chef_repo_mergers = [
