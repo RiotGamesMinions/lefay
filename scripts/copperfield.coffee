@@ -11,7 +11,7 @@
 
 module.exports = (robot) ->
   robot.hear /.*copperfield.*/i, (msg) ->
-    imageMe msg, "copperfield", (url) ->
+    imageMe msg, "copperfield meme", (url) ->
       msg.send url
 
 imageMe = (msg, query, cb) ->
