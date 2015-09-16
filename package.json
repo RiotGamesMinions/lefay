@@ -52,6 +52,7 @@
     "hubot-google-translate": ">= 0.1.0",
     "hubot-http-status": ">= 0.2.0",
     "hubot-youtube": ">= 0.1.2",
-    "hubot-calculator": ">= 0.2.0"
+    "hubot-calculator": ">= 0.2.0",
+    "hubot-current-time": ">= 1.0.0"
   }
 }
