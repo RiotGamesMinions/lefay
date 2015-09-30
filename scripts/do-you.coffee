@@ -5,5 +5,5 @@
 #   lcaro
 
 module.exports = (robot) ->
-  robot.respond /do you (.+)$/i, (msg) ->
+  robot.respond /do you (.+)\??$/i, (msg) ->
     msg.reply "yes I do in fact " + msg.match[1]
