@@ -1,5 +1,5 @@
 # Description
-#   "Tell me more"
+#   "The black wind howls"
 #
 # Author
 #   ealtorfer
@@ -9,5 +9,5 @@ images = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /tell me more/i, (msg) ->
+  robot.hear /the black wind howls/i, (msg) ->
     msg.send msg.random images
