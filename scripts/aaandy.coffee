@@ -9,5 +9,5 @@ images = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /\baaandy/i, (msg) ->
+  robot.hear /\ba{3,}ndy/i, (msg) ->
     msg.send msg.random images
