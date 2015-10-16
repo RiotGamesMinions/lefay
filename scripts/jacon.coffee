@@ -7,5 +7,5 @@
 
 
 module.exports = (robot) ->
-  robot.head /@jacon/i, (msg) ->
+  robot.hear /@jacon/i, (msg) ->
     msg.send "@JakePearce ^"
