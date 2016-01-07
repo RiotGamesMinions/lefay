@@ -15,9 +15,9 @@
   },
 
   "dependencies": {
-    "hubot": "2.6.4",
+    "hubot": "2.17.0",
     "hubot-scripts": "git://github.com/github/hubot-scripts.git",
-    "hubot-hipchat": "2.6.4",
+    "hubot-hipchat": "2.12.0-6",
     "htmlparser": "1.7.6",
     "soupselect": "0.2.0",
     "aws2js": "0.7.10",
