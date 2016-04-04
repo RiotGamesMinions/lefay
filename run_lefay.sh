@@ -4,10 +4,10 @@ then
     exit
 fi
 
-git pull origin hipchat
+git pull origin slack
 npm install
 echo "getting private scripts"
-(cd ../lefay-private-scripts ; git pull origin hipchat)
+(cd ../lefay-private-scripts ; git pull origin slack)
 cp ../lefay-private-scripts/scripts/* scripts/
 echo "running lefay!"
-bin/hubot -a hipchat
+bin/hubot -a slack
