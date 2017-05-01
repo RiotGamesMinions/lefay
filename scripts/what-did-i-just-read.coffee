@@ -3,4 +3,4 @@
 
 module.exports = (robot) ->
   robot.hear /what did I just read/i, (msg) ->
-    msg.send "http://mlkshk.com/r/NR42.gif"
+    msg.send "http://i.imgur.com/pvu6Ipw.gif"

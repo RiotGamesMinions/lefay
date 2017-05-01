@@ -1,3 +1,3 @@
 module.exports = (robot) ->
   robot.hear /^:\)$/i, (msg) ->
-    msg.send "http://mlkshk.com/r/TH09.gif"
+    msg.send "https://i.imgur.com/kIfsLeD.gif"

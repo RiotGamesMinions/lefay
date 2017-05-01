@@ -5,6 +5,6 @@
 
 module.exports = (robot) ->
   robot.respond /tell (.*) to stfu/i, (msg) ->
-    msg.send "http://mlkshk.com/r/HCDF.jpg"
+    msg.send "http://i.imgur.com/zexIICN.jpg"
   robot.respond /tell (.*) to cheer( the fuck)? up/i, (msg) ->
-    msg.send "http://mlkshk.com/r/GSAY.jpg"
+    msg.send "http://i.imgur.com/atw4tFS.jpg"
