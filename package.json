@@ -52,6 +52,7 @@
     "validator": "0.4.23",
     "xml2js": "0.2.3",
     "hubot-mute": "*",
-    "request-promise": "*"
+    "request-promise": "*",
+    "bluebird": "*"
   }
 }
