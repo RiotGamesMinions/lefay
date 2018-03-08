@@ -8,7 +8,7 @@ inspire= (robot, msg) ->
       if err 
         console.log(body)
       else
-        msg.send "${body}"
+        msg.send body
 
 module.exports = (robot) ->
   robot.respond /inspire me/i, (msg) ->
