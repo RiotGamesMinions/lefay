@@ -1,0 +1,25 @@
+{
+  "name": "lefay",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Michael Ivey <michael.ivey@riotgames.com>",
+  "description": "Riot Games chat bot of remarkable utility",
+  "dependencies": {
+    "hubot": "^3.1.1",
+    "hubot-diagnostics": "^1.0.0",
+    "hubot-google-images": "^0.2.7",
+    "hubot-google-translate": "^0.2.1",
+    "hubot-help": "^1.0.1",
+    "hubot-heroku-keepalive": "^1.0.3",
+    "hubot-maps": "0.0.3",
+    "hubot-pugme": "^0.1.1",
+    "hubot-redis-brain": "^1.0.0",
+    "hubot-rules": "^1.0.0",
+    "hubot-scripts": "^2.17.2",
+    "hubot-shipit": "^0.2.1",
+    "hubot-slack": "^4.5.4"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
