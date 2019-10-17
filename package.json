@@ -38,7 +38,7 @@
     "hubot-victory": ">= 0.0.0",
     "hubot-youtube": ">= 0.1.2",
     "jsdom": "^0.8.10",
-    "moment": "~2.12.0",
+    "moment": "~2.24.0",
     "natural": "^0.1.19",
     "node-jira": "git://github.com/baz/node-jira.git#master",
     "nodepie": "0.5.0",
